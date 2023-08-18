@@ -1,0 +1,104 @@
+[18-Aug-2023 08:19:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:19:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:19:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:19:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:19:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/web.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/web.php on line 16
+[18-Aug-2023 08:19:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/u0tg2fjicbap/thitchincham.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/console.php on line 17
+[18-Aug-2023 08:19:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16
+[18-Aug-2023 08:19:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16
+[18-Aug-2023 08:19:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16
+[18-Aug-2023 08:19:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16
+[18-Aug-2023 08:20:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:20:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/u0tg2fjicbap/thitchincham.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/api.php on line 17
+[18-Aug-2023 08:20:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16
+[18-Aug-2023 08:20:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/routes/channels.php on line 16

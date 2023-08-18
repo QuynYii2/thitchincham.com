@@ -1,0 +1,224 @@
+[18-Aug-2023 08:19:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:19:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:19:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:19:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php on line 18
+[18-Aug-2023 08:19:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php on line 18
+[18-Aug-2023 08:19:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php on line 18
+[18-Aug-2023 08:19:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/broadcasting.php on line 18
+[18-Aug-2023 08:19:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php on line 32
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/queue.php on line 16
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/queue.php on line 16
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/queue.php on line 16
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/queue.php on line 16
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php on line 32
+[18-Aug-2023 08:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php on line 32
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php on line 32
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/logging.php on line 21
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:20:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:20:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/logging.php on line 21
+[18-Aug-2023 08:20:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:20:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/database.php on line 18
+[18-Aug-2023 08:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
+[18-Aug-2023 08:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/logging.php on line 21
+[18-Aug-2023 08:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/mail.php on line 16
+[18-Aug-2023 08:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:20:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/sanctum.php on line 18
+[18-Aug-2023 08:20:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:20:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/app.php on line 19
+[18-Aug-2023 08:21:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/hashing.php on line 32
+[18-Aug-2023 08:21:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:21:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/filesystems.php on line 16
+[18-Aug-2023 08:21:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/u0tg2fjicbap/thitchincham.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/u0tg2fjicbap/thitchincham.com/config/cache.php on line 18
