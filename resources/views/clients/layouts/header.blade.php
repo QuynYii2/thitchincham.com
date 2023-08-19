@@ -4,7 +4,7 @@
             <!-- Mobile Display -->
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <img src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}" alt=""/>
+                    <img src="{{asset('assets/img/logo.png')}}" alt=""/>
                 </a>
                 <h1 class="site-description">Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội</h1>
                 <a id="showmenu">
@@ -42,7 +42,7 @@
                         </li>
                         <li id="menu-item-494"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
-                            <a href="https://quannho.vn/gioi-thieu/">Về chúng tôi</a>
+                            <a href="{{route('about.us')}}">Về chúng tôi</a>
                         </li>
                         <li id="menu-item-839"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839 dropdown">
@@ -52,7 +52,7 @@
                             <ul class="dropdown-menu">
                                 <li id="menu-item-458"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                    <a href="https://quannho.vn/menu/">Menu</a>
+                                    <a href="{{route('menu.index')}}">Menu</a>
                                 </li>
                             </ul>
                         </li>
@@ -86,14 +86,14 @@
                         <a href="https://quannho.vn/" aria-current="page">Trang chủ</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
-                        <a href="https://quannho.vn/gioi-thieu/">Về chúng tôi</a>
+                        <a href="{{route('about.us')}}">Về chúng tôi</a>
                     </li>
                     <li
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839">
                         <a href="#">Menu</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                <a href="https://quannho.vn/menu/">Menu</a>
+                                <a href="{{route('menu.index')}}">Menu</a>
                             </li>
                         </ul>
                     </li>
