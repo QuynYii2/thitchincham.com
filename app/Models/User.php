@@ -54,8 +54,8 @@ class User extends Authenticatable
     }
 
 
-//    public function products()
-//    {
-//        return $this->hasMany(Product::class);
-//    }
+    public function menus()
+    {
+        return $this->hasMany(Menu::class);
+    }
 }
