@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +24,8 @@ Route::get('/welcome', function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // PermitALl
-Route::get('not-found', [HomeController::class, 'notfound'])->name('not.found');
+Route::get('about-us', [ConfigController::class, 'aboutUs'])->name('about.us');
+Route::get('menu', [MenuController::class, 'index'])->name('menu.index');
 
 // Auth
 Route::prefix('auth')->group(function () {
@@ -41,6 +44,8 @@ Route::middleware(['auth'])->group(function () {
 //    Route::post('update-info', [UserController::class, 'updateInfo'])->name('user.update.info');
 });
 
+// Error
+Route::get('not-found', [HomeController::class, 'notfound'])->name('not.found');
 
 //Admin
 Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {

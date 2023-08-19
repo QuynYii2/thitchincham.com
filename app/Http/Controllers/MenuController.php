@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    //
+    public function index(Request $request){
+        return view('clients.menu');
+    }
 }
