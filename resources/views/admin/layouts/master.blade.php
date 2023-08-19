@@ -26,6 +26,7 @@
     <link href="{{asset('assets/admin/vendor/quill/quill.bubble.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/vendor/simple-datatables/style.css')}}" rel="stylesheet">
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/admin/css/style.css')}}" rel="stylesheet">
@@ -60,6 +61,21 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/admin/js/main.js')}}"></script>
+
+<script>
+    let desc = document.querySelectorAll('.description');
+    for (let i = 0; i < desc.length; i++) {
+        CKEDITOR.replace( desc[i], {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+        } );
+        // CKEDITOR.replace(desc[i]);
+    }
+</script>
 
 </body>
 
