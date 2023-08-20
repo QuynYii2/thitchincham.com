@@ -63,10 +63,10 @@
                 <ul id="menu-menu-chinh-1" class="">
                     <li
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
-                        <a href="https://quannho.vn/">Trang chủ</a>
+                        <a href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
-                        <a href="https://quannho.vn/gioi-thieu/">Về chúng tôi</a>
+                        <a href="{{route('about.us')}}/">Về chúng tôi</a>
                     </li>
                     <li
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839 dropdown">
@@ -76,19 +76,19 @@
                         <ul class="dropdown-menu">
                             <li
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                <a href="https://quannho.vn/menu/">Menu</a>
+                                <a href="{{route('menu.index')}}">Menu</a>
                             </li>
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
-                        <a href="https://quannho.vn/category/news-events/">News &amp;Events</a>
+                        <a href="{{route('news.index')}}">News &amp;Events</a>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                        <a href="https://quannho.vn/category/tuyen-dung/">Tuyển dụng</a>
+                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
                     </li>
                     <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                        <a href="https://quannho.vn/danh-muc-chi-nhanh/chi-nhanh/">Chi nhánh</a>
+                        <a href="{{route('branch.index')}}">Chi nhánh</a>
                     </li>
                 </ul>
             </div>

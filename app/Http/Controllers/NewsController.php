@@ -22,6 +22,10 @@ class NewsController extends Controller
         }
         $news->views = $news->views + 1;
         $news->save();
-        return view('clients.news-detail', compact('news'));
+        $moreNews = News::where([
+            ['status', NewsStatus::ACTIVE],
+            ['id', '!=', $id]
+        ])->limit(3)->orderBy('created_at', 'desc')->get();
+        return view('clients.news-detail', compact('news', 'moreNews'));
     }
 }

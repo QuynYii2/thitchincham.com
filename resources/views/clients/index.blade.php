@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="readmore-section">
-                    <a href="https://quannho.vn/menu/">Xem thêm </a>
+                    <a href="{{route('menu.index')}}">Xem thêm </a>
                 </div>
             </div>
         </div>
