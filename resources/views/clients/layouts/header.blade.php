@@ -3,7 +3,7 @@
         <div class="container">
             <!-- Mobile Display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{route('home')}}">
                     <img src="{{asset('assets/img/logo.png')}}" alt=""/>
                 </a>
                 <h1 class="site-description">Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội</h1>
