@@ -157,7 +157,7 @@ class AdminMenuController extends Controller
             }
             $menu->status = MenuStatus::DELETED;
             $menu->save();
-            return redirect(route('admin.show.all.products'));
+            return redirect(route('admin.show.all.menus'));
         } catch (\Exception $exception) {
             return back();
         }

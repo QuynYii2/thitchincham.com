@@ -30,6 +30,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('about-us', [ConfigController::class, 'aboutUs'])->name('about.us');
 Route::get('menu', [MenuController::class, 'index'])->name('menu.index');
 Route::get('news', [NewsController::class, 'index'])->name('news.index');
+Route::get('news-detail/{id}', [NewsController::class, 'detail'])->name('news.detail');
 Route::get('branch', [BranchController::class, 'index'])->name('branch.index');
 Route::get('recruitment', [RecruitmentController::class, 'index'])->name('recruitment.index');
 

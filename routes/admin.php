@@ -4,6 +4,7 @@
 use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminMenuController;
+use App\Http\Controllers\Admin\AdminNewsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin.home');
@@ -18,7 +19,7 @@ Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin
 //    Route::delete('delete/{id}', [AdminUserController::class, 'delete'])->name('admin.delete.user');
 //});
 // Category
-Route::group(['prefix' => 'categories'],function (){
+Route::group(['prefix' => 'categories'], function () {
     Route::get('list', [AdminCategoryController::class, 'index'])->name('admin.show.all.categories');
     Route::get('detail/{id}', [AdminCategoryController::class, 'show'])->name('admin.show.detail.category');
     Route::put('update/{id}', [AdminCategoryController::class, 'update'])->name('admin.update.category');
@@ -28,7 +29,7 @@ Route::group(['prefix' => 'categories'],function (){
     Route::post('toggle/{id}', [AdminCategoryController::class, 'toggle'])->name('admin.category.toggle');
 });
 // Menu
-Route::group(['prefix' => 'menus'],function (){
+Route::group(['prefix' => 'menus'], function () {
     Route::get('list', [AdminMenuController::class, 'index'])->name('admin.show.all.menus');
     Route::get('detail/{id}', [AdminMenuController::class, 'show'])->name('admin.show.detail.menu');
     Route::put('update/{id}', [AdminMenuController::class, 'update'])->name('admin.update.menu');
@@ -36,4 +37,13 @@ Route::group(['prefix' => 'menus'],function (){
     Route::post('create', [AdminMenuController::class, 'store'])->name('admin.menu.create');
     Route::delete('delete/{id}', [AdminMenuController::class, 'destroy'])->name('admin.delete.menu');
     Route::post('toggle/{id}', [AdminMenuController::class, 'toggle'])->name('admin.menu.toggle');
+});
+// News
+Route::group(['prefix' => 'news'], function () {
+    Route::get('list', [AdminNewsController::class, 'index'])->name('admin.show.all.news');
+    Route::get('detail/{id}', [AdminNewsController::class, 'detail'])->name('admin.show.detail.news');
+    Route::put('update/{id}', [AdminNewsController::class, 'update'])->name('admin.update.news');
+    Route::get('create', [AdminNewsController::class, 'createProcess'])->name('admin.news.processCreate');
+    Route::post('create', [AdminNewsController::class, 'create'])->name('admin.news.create');
+    Route::delete('delete/{id}', [AdminNewsController::class, 'delete'])->name('admin.delete.news');
 });
