@@ -30,6 +30,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('about-us', [ConfigController::class, 'aboutUs'])->name('about.us');
 Route::get('menu', [MenuController::class, 'index'])->name('menu.index');
 Route::get('news', [NewsController::class, 'index'])->name('news.index');
+Route::get('news-detail/{id}', [NewsController::class, 'detail'])->name('news.detail');
 Route::get('branch', [BranchController::class, 'index'])->name('branch.index');
 Route::get('recruitment', [RecruitmentController::class, 'index'])->name('recruitment.index');
 
@@ -45,10 +46,7 @@ Route::prefix('auth')->group(function () {
 
 // Authenticate
 Route::middleware(['auth'])->group(function () {
-    // User
-//    Route::get('my-profile', [UserController::class, 'profile'])->name('my.profile');
-//    Route::post('change-password', [UserController::class, 'changePassword'])->name('user.change.password');
-//    Route::post('update-info', [UserController::class, 'updateInfo'])->name('user.update.info');
+
 });
 
 // Error

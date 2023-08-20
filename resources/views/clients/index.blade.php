@@ -85,7 +85,7 @@
                                      sizes="(max-width: 613px) 100vw, 613px"/>
                             </div>
                             <div class="readmore-section">
-                                <a href="/gioi-thieu/">Xem thêm </a>
+                                <a href="{{route('about.us')}}">Xem thêm </a>
                             </div>
                         </div>
                     </div>
@@ -118,52 +118,25 @@
                 <h3 class="specail-title">BEST SELLER </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/">
-                                    <img width="768" height="768"
-                                         src="{{asset('assets/client/wp-content/uploads/2022/12/4-768x768.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/4-768x768.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2022/12/4-100x100.png')}} 100w,
-                                                 {{asset('assets/client/wp-content/uploads/2022/12/4.png')}} 800w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                                <p>Lẩu Tôm Bầu Quán Nhỏ</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/">
-                                    <img width="768" height="768"
-                                         src="{{asset('assets/client/wp-content/uploads/2023/05/bf97e05a-1db4-4e59-8be2-d3bb674b421a-768x768.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2023/05/bf97e05a-1db4-4e59-8be2-d3bb674b421a-768x768.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/05/bf97e05a-1db4-4e59-8be2-d3bb674b421a-1536x1536.png')}} 1536w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/05/bf97e05a-1db4-4e59-8be2-d3bb674b421a-2048x2048.png')}} 2048w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/05/bf97e05a-1db4-4e59-8be2-d3bb674b421a-100x100.png')}} 100w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                                <p>Sườn Tảng Quán Nhỏ</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/">
-                                    <img width="768" height="768"
-                                         src="{{asset('assets/client/wp-content/uploads/2022/12/2-768x768.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/2-768x768.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2022/12/2-100x100.png')}} 100w,
-                                                 {{asset('assets/client/wp-content/uploads/2022/12/2.png')}} 800w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                                <p>Tôm Chiên Tổ Yến Quán Nhỏ</p>
-                            </div>
-                        </div>
+                        @if(!$bestSellers->isEmpty())
+                            @foreach($bestSellers as $menuItem)
+                                <div class="swiper-slide">
+                                    <div class="item_slider_slick">
+                                        <a href="#">
+                                            <img width="768" height="768"
+                                                 src="{{ $menuItem->thumbnail }}"
+                                                 class="attachment-medium_large size-medium_large" alt=""
+                                                 decoding="async" loading="lazy"
+                                                 srcset="{{$menuItem->thumbnail}} 768w,
+                                                 {{$menuItem->thumbnail}} 100w,
+                                                 {{$menuItem->thumbnail}} 800w"
+                                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                                        </a>
+                                        <p>{{$menuItem->name}}</p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-next">
@@ -357,107 +330,68 @@
                 </h3>
 
                 <div class="row content-news">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-bignews">
-                        <div class="box-news">
-                            <div class="img-news">
-                                <a href="https://quannho.vn/me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho/">
-                                    <img width="768" height="512"
-                                         src="{{asset('assets/client/wp-content/uploads/2023/08/me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho-1-768x512.jpg')}}"
-                                         class="attachment-medium_large size-medium_large wp-post-image"
-                                         alt="me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho"
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2023/08/me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho-1-768x512.jpg')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho-1.jpg')}} 1500w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                            </div>
-                            <div class="info-news">
-                                <a class="name-news"
-                                   href="https://quannho.vn/me-say-top-cac-mon-hai-san-tuoi-ngon-thuong-hang-tai-nho/">Mê
-                                    say top các món hải sản tươi ngon, thượng hạng tại Nhỏ</a>
-                                <p class="excerpt-news">Không chỉ sở hữu không gian cực chill, dàn âm cực đỉnh,
-                                    Nhỏ còn luôn mang đến cho các thực khách những món ăn cực ngon. Đừng bỏ lỡ
-                                    ...</p>
+                    @if(!$listNews->isEmpty())
+                        @php
+                            $newsItem = $listNews[0];
+                        @endphp
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-bignews">
+                            <div class="box-news">
+                                <div class="img-news">
+                                    <a href="{{route('news.detail', $newsItem->id)}}">
+                                        <img width="768" height="512"
+                                             src="{{ $newsItem->thumbnail }}"
+                                             class="attachment-medium_large size-medium_large wp-post-image"
+                                             alt="{{ $newsItem->title }}"
+                                             decoding="async" loading="lazy"
+                                             srcset="{{ $newsItem->thumbnail }} 768w,
+                                                 {{ $newsItem->thumbnail }} 1500w"
+                                             sizes="(max-width: 768px) 100vw, 768px"/>
+                                    </a>
+                                </div>
+                                <div class="info-news">
+                                    <a class="name-news"
+                                       href="{{route('news.detail', $newsItem->id)}}">{{$newsItem->title}}</a>
+                                    <p class="excerpt-news">{!! $newsItem->short_content !!}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-smallnews">
-                        <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-smallnews">
+                            <div class="row">
 
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
-                                <div class="box-news">
-                                    <div class="img-news">
-                                        <a href="https://quannho.vn/tu-diem-an-uong-sieu-ngon/">
-                                            <img width="768" height="512"
-                                                 src="{{asset('assets/client/wp-content/uploads/2023/08/tu-diem-an-uong-sieu-ngon-3-768x512.png')}}"
-                                                 class="attachment-medium_large size-medium_large wp-post-image"
-                                                 alt="tu-diem-an-uong-sieu-ngon" decoding="async" loading="lazy"
-                                                 srcset="{{asset('assets/client/wp-content/uploads/2023/08/tu-diem-an-uong-sieu-ngon-3-768x512.png')}} 768w,
-                                                         {{asset('assets/client/wp-content/uploads/2023/08/tu-diem-an-uong-sieu-ngon-3.png')}} 1500w"
-                                                 sizes="(max-width: 768px) 100vw, 768px"/>
-                                        </a>
-                                    </div>
-                                    <div class="info-news">
-                                        <a class="name-news"
-                                           href="https://quannho.vn/tu-diem-an-uong-sieu-ngon/">Khám phá ngay
-                                            tụ điểm “ăn uống siêu ngon, ăn ảnh siêu chất” của giới trẻ Hà
-                                            Thành</a>
-                                    </div>
-                                </div>
+                                @foreach($listNews as $news)
+                                    @if($newsItem->id != $news->id)
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
+                                            <div class="box-news">
+                                                <div class="img-news">
+                                                    <a href="{{route('news.detail', $news->id)}}">
+                                                        <img width="768" height="512"
+                                                             src="{{ $news->thumbnail }}"
+                                                             class="attachment-medium_large size-medium_large wp-post-image"
+                                                             alt="{{ $news->title }}"
+                                                             decoding="async" loading="lazy"
+                                                             srcset="{{ $news->thumbnail }} 768w,
+                                                             {{ $news->thumbnail }} 1500w"
+                                                             sizes="(max-width: 768px) 100vw, 768px"/>
+                                                    </a>
+                                                </div>
+                                                <div class="info-news">
+                                                    <a class="name-news"
+                                                       href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
+                                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endif
+                                @endforeach
                             </div>
-
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
-                                <div class="box-news">
-                                    <div class="img-news">
-                                        <a href="https://quannho.vn/thien-duong-overnight-gia-cuc-re/">
-                                            <img width="768" height="512"
-                                                 src="{{asset('assets/client/wp-content/uploads/2023/08/thien-duong-overnight-gia-cuc-re-5-768x512.png')}}"
-                                                 class="attachment-medium_large size-medium_large wp-post-image"
-                                                 alt="thien-duong-overnight-gia-cuc-re" decoding="async"
-                                                 loading="lazy"
-                                                 srcset="{{asset('assets/client/wp-content/uploads/2023/08/thien-duong-overnight-gia-cuc-re-5-768x512.png')}} 768w,
-                                                         {{asset('assets/client/wp-content/uploads/2023/08/thien-duong-overnight-gia-cuc-re-5.png')}} 1500w"
-                                                 sizes="(max-width: 768px) 100vw, 768px"/>
-                                        </a>
-                                    </div>
-                                    <div class="info-news">
-                                        <a class="name-news"
-                                           href="https://quannho.vn/thien-duong-overnight-gia-cuc-re/">Top 3
-                                            thiên đường overnight giá cực rẻ cho anh em tại Hà Nội</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
-                                <div class="box-news">
-                                    <div class="img-news">
-                                        <a
-                                                href="https://quannho.vn/top-5-mon-an-tai-quan-nho-giup-ban-don-tim-crush-ngay-tu-lan-hen-dau-tien/">
-                                            <img width="768" height="512"
-                                                 src="{{asset('assets/client/wp-content/uploads/2023/08/top-5-mon-an-tai-quan-nho-1-768x512.png')}}"
-                                                 class="attachment-medium_large size-medium_large wp-post-image"
-                                                 alt="top-5-mon-an-tai-quan-nho" decoding="async" loading="lazy"
-                                                 srcset="{{asset('assets/client/wp-content/uploads/2023/08/top-5-mon-an-tai-quan-nho-1-768x512.png')}} 768w,
-                                                         {{asset('assets/client/wp-content/uploads/2023/08/top-5-mon-an-tai-quan-nho-1-1536x1024.png')}} 1536w,
-                                                         {{asset('assets/client/wp-content/uploads/2023/08/top-5-mon-an-tai-quan-nho-1.png')}} 2048w"
-                                                 sizes="(max-width: 768px) 100vw, 768px"/>
-                                        </a>
-                                    </div>
-                                    <div class="info-news">
-                                        <a class="name-news"
-                                           href="https://quannho.vn/top-5-mon-an-tai-quan-nho-giup-ban-don-tim-crush-ngay-tu-lan-hen-dau-tien/">TOP
-                                            5 món ăn tại Quán Nhỏ giúp bạn “đốn tim” crush ngay từ lần hẹn đầu
-                                            tiên</a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
+
+                    @endif
                 </div>
                 <div class="readmore-section">
-                    <a href="/category/news-events/">Xem thêm </a>
+                    <a href="{{route('news.index')}}">Xem thêm </a>
                 </div>
             </div>
         </div>
