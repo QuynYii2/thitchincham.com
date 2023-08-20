@@ -1,9 +1,12 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BranchController;
 use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\RecruitmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +29,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // PermitALl
 Route::get('about-us', [ConfigController::class, 'aboutUs'])->name('about.us');
 Route::get('menu', [MenuController::class, 'index'])->name('menu.index');
+Route::get('news', [NewsController::class, 'index'])->name('news.index');
+Route::get('branch', [BranchController::class, 'index'])->name('branch.index');
+Route::get('recruitment', [RecruitmentController::class, 'index'])->name('recruitment.index');
+
 
 // Auth
 Route::prefix('auth')->group(function () {

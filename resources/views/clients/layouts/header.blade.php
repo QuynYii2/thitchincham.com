@@ -23,7 +23,7 @@
                         </button>
                         <div class="dropdown-search dropdown-menu">
                             <form role="search" method="get" id="searchform" class="searchform"
-                                  action="https://quannho.vn/">
+                                  action="#">
                                 <div>
                                     <label class="screen-reader-text" for="s"></label>
                                     <input type="text" class="form-control" placeholder="Tìm kiếm.." value=""
@@ -38,7 +38,7 @@
                     <ul id="menu-menu-chinh" class="nav navbar-nav navbar-right">
                         <li id="menu-item-499"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
-                            <a href="#">Trang chủ</a>
+                            <a href="{{route('home')}}">Trang chủ</a>
                         </li>
                         <li id="menu-item-494"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
@@ -58,15 +58,15 @@
                         </li>
                         <li id="menu-item-453"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
-                            <a href="https://quannho.vn/category/news-events/">News &amp;Events</a>
+                            <a href="{{route('news.index')}}">News &amp;Events</a>
                         </li>
                         <li id="menu-item-454"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                            <a href="https://quannho.vn/category/tuyen-dung/">Tuyển dụng</a>
+                            <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
                         </li>
                         <li id="menu-item-496"
                             class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                            <a href="https://quannho.vn/danh-muc-chi-nhanh/chi-nhanh/">Chi nhánh</a>
+                            <a href="{{route('branch.index')}}">Chi nhánh</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +83,7 @@
                 <ul id="menu-main" class="mobile-menu">
                     <li
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
-                        <a href="https://quannho.vn/" aria-current="page">Trang chủ</a>
+                        <a href="{{route('home')}}" aria-current="page">Trang chủ</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
                         <a href="{{route('about.us')}}">Về chúng tôi</a>
@@ -98,13 +98,13 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
-                        <a href="https://quannho.vn/category/news-events/">News &amp;Events</a>
+                        <a href="{{route('news.index')}}">News &amp;Events</a>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                        <a href="https://quannho.vn/category/tuyen-dung/">Tuyển dụng</a>
+                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                        <a href="https://quannho.vn/danh-muc-chi-nhanh/chi-nhanh/">Chi nhánh</a>
+                        <a href="{{route('branch.index')}}">Chi nhánh</a>
                     </li>
                 </ul>
             </div>
