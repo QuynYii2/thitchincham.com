@@ -46,10 +46,7 @@ Route::prefix('auth')->group(function () {
 
 // Authenticate
 Route::middleware(['auth'])->group(function () {
-    // User
-//    Route::get('my-profile', [UserController::class, 'profile'])->name('my.profile');
-//    Route::post('change-password', [UserController::class, 'changePassword'])->name('user.change.password');
-//    Route::post('update-info', [UserController::class, 'updateInfo'])->name('user.update.info');
+
 });
 
 // Error
