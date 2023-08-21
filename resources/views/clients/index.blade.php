@@ -54,8 +54,10 @@
                      width="810" height="329" alt="" decoding="async" loading="lazy"/>
                 <p class="sb-content-p">Toạ Độ Ăn Chơi Bậc Nhất Hà Thành </p>
                 <p class="sp-content-button">
-                    <a class="sp-button-xt" href="https://www.facebook.com/quannhonhauxuyendem">Xem thêm</a>
-                    <a class="sp-button-gn" href="tel:1900234538">Gọi ngay</a>
+                    @if($config)
+                        <a class="sp-button-xt" href="{{$config->facebook}}">Xem thêm</a>
+                        <a class="sp-button-gn" href="tel:{{$config->hotline}}">Gọi ngay</a>
+                    @endif
                 </p>
             </div>
         </div>
@@ -69,28 +71,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
-                        <div class="info-introduce">
-                            <img width="156" height="111"
-                                 src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
-                                 class="image-intro" alt="" decoding="async" loading="lazy"/>
-                            <h2 class="title-section">{{$news->title}}</h2>
-                            <div class="excerpt-introduce truncate-text">
-                                {!! $news->short_content !!}
-                            </div>
-                            <div class="box-image_introduce show_mobile">
-                                <img width="613" height="405"
-                                     src="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}}"
-                                     class="attachment-medium_large size-medium_large" alt="" decoding="async"
-                                     loading="lazy"
-                                     srcset="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}} 613w,
+                        @if($news)
+                            <div class="info-introduce">
+                                <img width="156" height="111"
+                                     src="{{$config->logo}}"
+                                     class="image-intro" alt="" decoding="async" loading="lazy"/>
+                                <h2 class="title-section">{{$news->title}}</h2>
+                                <div class="excerpt-introduce truncate-text">
+                                    {!! $news->short_content !!}
+                                </div>
+                                <div class="box-image_introduce show_mobile">
+                                    <img width="613" height="405"
+                                         src="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}}"
+                                         class="attachment-medium_large size-medium_large" alt="" decoding="async"
+                                         loading="lazy"
+                                         srcset="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}} 613w,
                                              {{asset('assets/client/wp-content/uploads/2022/09/img_intro-360x238.png')}} 360w,
                                              {{asset('assets/client/wp-content/uploads/2022/09/img_intro-120x80.png')}} 120w"
-                                     sizes="(max-width: 613px) 100vw, 613px"/>
+                                         sizes="(max-width: 613px) 100vw, 613px"/>
+                                </div>
+                                <div class="readmore-section">
+                                    <a href="{{route('about.us')}}">Xem thêm </a>
+                                </div>
                             </div>
-                            <div class="readmore-section">
-                                <a href="{{route('about.us')}}">Xem thêm </a>
-                            </div>
-                        </div>
+                        @endif
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 show_pc" data-wow-delay="0.5s">
                         <div class="box-image_introduce">
@@ -116,7 +120,7 @@
         <div class="background-overlay">
             <div class="container">
                 <img width="156" height="111"
-                     src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
+                     src="{{$config->logo}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">BEST SELLER </h3>
                 <div class="slider_sec_8 swiper">
@@ -164,7 +168,7 @@
         <div class="background-overlay">
             <div class="container">
                 <img width="156" height="111"
-                     src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
+                     src="{{$config->logo}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">MENU QUÁN NHỎ </h3>
                 <div class="slider_sec_8 swiper">
@@ -207,7 +211,7 @@
         <div class="background-overlay">
             <div class="container">
                 <img width="156" height="111"
-                     src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
+                     src="{{$config->logo}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">CÁC MÓN MỚI NHẤT</h3>
                 <div class="wrap-menu">
@@ -256,7 +260,7 @@
              height="1150" alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <img class="image-specail" src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
+                <img class="image-specail" src="{{$config->logo}}"
                      width="156"
                      height="111" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">NEWS &EVENTS
@@ -338,7 +342,7 @@
                 <div class="row content-app">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-app">
                         <img class="image-specail"
-                             src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
+                             src="{{$config->logo}}"
                              width="156" height="111" alt="" decoding="async" loading="lazy"/>
                         <h3 class="specail-title">Kết nối zalo ngay
                         </h3>

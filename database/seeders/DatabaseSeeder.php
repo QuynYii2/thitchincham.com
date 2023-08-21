@@ -20,10 +20,11 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            RoleSeeder::class,
-            UserSeeder::class,
-            CategorySeeder::class,
-            MenuSeeder::class,
+//            RoleSeeder::class,
+//            UserSeeder::class,
+//            CategorySeeder::class,
+//            MenuSeeder::class,
+            ConfigSeeder::class,
         ]);
     }
 }

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\ConfigStatus;
 use App\Enums\MenuStatus;
+use App\Models\Config;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 
@@ -11,7 +13,8 @@ class MenuController extends Controller
     public function index(Request $request)
     {
         $menus = Menu::where('status', MenuStatus::ACTIVE)->orderBy('created_at', 'desc')->get();
-        return view('clients.menu', compact('menus'));
+        $config = Config::where('status', ConfigStatus::ACTIVE)->first();
+        return view('clients.menu', compact('menus', 'config'));
     }
 
     public function detail($id)

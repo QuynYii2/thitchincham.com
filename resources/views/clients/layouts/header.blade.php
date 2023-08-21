@@ -1,10 +1,15 @@
+@php
+    $config = \App\Models\Config::where('status', \App\Enums\ConfigStatus::ACTIVE)->first();
+@endphp
 <header role="banner">
     <nav class='navbar navbar-default sticky-nav' role='navigation'>
         <div class="container">
             <!-- Mobile Display -->
             <div class="navbar-header">
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img src="{{asset('assets/img/logo.png')}}" alt=""/>
+                    @if($config)
+                        <img src="{{$config->logo}}" alt=""/>
+                    @endif
                 </a>
                 <h1 class="site-description">Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội</h1>
                 <a id="showmenu">

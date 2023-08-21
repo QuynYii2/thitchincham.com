@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Enums\CategoryStatus;
+use App\Enums\ConfigStatus;
 use App\Enums\MenuStatus;
 use App\Enums\NewsStatus;
 use App\Models\Category;
+use App\Models\Config;
 use App\Models\Menu;
 use App\Models\News;
 use App\Models\Role;
@@ -26,7 +28,8 @@ class HomeController extends Controller
         $listNews = News::where('status', '!=', NewsStatus::DELETED)->get();
         $news = News::where('title', 'Về chúng tôi')->first();
         $categories = Category::where('status', CategoryStatus::ACTIVE)->orderBy('created_at', 'desc')->limit(6)->get();
-        return view('clients.index', compact('bestSellers', 'listNews', 'news', 'newMenus', 'categories'));
+        $config = Config::where('status', ConfigStatus::ACTIVE)->first();
+        return view('clients.index', compact('bestSellers', 'listNews', 'news', 'newMenus', 'categories', 'config'));
     }
 
     public function checkAdmin()
