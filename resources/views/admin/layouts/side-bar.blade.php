@@ -12,17 +12,17 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-journal-text"></i><span>Category</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-journal-text"></i><span>Danh mục sản phẩm</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
                     <a href="{{route('admin.show.all.categories')}}">
-                        <i class="bi bi-circle"></i><span>List Category</span>
+                        <i class="bi bi-circle"></i><span>Danh mục sản phẩm</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.category.processCreate')}}">
-                        <i class="bi bi-circle"></i><span>Create New Category</span>
+                        <i class="bi bi-circle"></i><span>Thêm mới danh mục sản phẩm</span>
                     </a>
                 </li>
             </ul>
@@ -30,17 +30,17 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#menu-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-menu-button-wide"></i><span>Menu</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-menu-button-wide"></i><span>Sản phẩm</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="menu-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
                     <a href="{{route('admin.show.all.menus')}}">
-                        <i class="bi bi-circle"></i><span>List Menu</span>
+                        <i class="bi bi-circle"></i><span>Danh sách sản phẩm</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.menu.processCreate')}}">
-                        <i class="bi bi-circle"></i><span>Create New Menu</span>
+                        <i class="bi bi-circle"></i><span>Tạo mới sản phẩm</span>
                     </a>
                 </li>
             </ul>
@@ -48,18 +48,18 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>News</span><i
+                <i class="bi bi-layout-text-window-reverse"></i><span>Tin tức</span><i
                         class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
                     <a href="{{route('admin.show.all.news')}}">
-                        <i class="bi bi-circle"></i><span>List News</span>
+                        <i class="bi bi-circle"></i><span>Danh sách tin tức</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.news.processCreate')}}">
-                        <i class="bi bi-circle"></i><span>Create News</span>
+                        <i class="bi bi-circle"></i><span>Thêm mới tin tức</span>
                     </a>
                 </li>
             </ul>
@@ -105,20 +105,20 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="{{route('admin.show.all.orders')}}">
                 <i class="bi bi-file-earmark"></i>
-                <span>Orders</span>
+                <span>Đơn hàng</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link collapsed" href="#">
                 <i class="bi bi-person"></i>
-                <span>Profile</span>
+                <span>Trang cá nhân</span>
             </a>
         </li><!-- End Profile Page Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="{{route('admin.show.all.configs')}}">
                 <i class="bi bi-envelope"></i>
-                <span>Contact</span>
+                <span>Thiết lập</span>
             </a>
         </li><!-- End Contact Page Nav -->
     </ul>

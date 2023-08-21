@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\ConfigStatus;
 use App\Enums\NewsStatus;
+use App\Models\Config;
 use App\Models\News;
 use Illuminate\Http\Request;
 
@@ -11,7 +13,8 @@ class NewsController extends Controller
     public function index()
     {
         $listNews = News::where('status', '!=', NewsStatus::DELETED)->get();
-        return view('clients.news', compact('listNews'));
+        $config = Config::where('status', ConfigStatus::ACTIVE)->first();
+        return view('clients.news', compact('listNews', 'config'));
     }
 
     public function detail($id)

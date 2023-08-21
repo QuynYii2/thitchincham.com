@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\Admin\AdminConfigController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminMenuController;
 use App\Http\Controllers\Admin\AdminNewsController;
@@ -49,11 +50,20 @@ Route::group(['prefix' => 'news'], function () {
     Route::delete('delete/{id}', [AdminNewsController::class, 'delete'])->name('admin.delete.news');
 });
 
-
-// News
+// Order
 Route::group(['prefix' => 'orders'], function () {
     Route::get('list', [AdminOrderController::class, 'index'])->name('admin.show.all.orders');
     Route::get('detail/{id}', [AdminOrderController::class, 'detail'])->name('admin.show.detail.order');
     Route::put('update/{id}', [AdminOrderController::class, 'update'])->name('admin.update.order');
     Route::delete('delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.delete.order');
+});
+
+// Config
+Route::group(['prefix' => 'configs'], function () {
+    Route::get('list', [AdminConfigController::class, 'index'])->name('admin.show.all.configs');
+    Route::get('detail/{id}', [AdminConfigController::class, 'detail'])->name('admin.show.detail.config');
+    Route::put('update/{id}', [AdminConfigController::class, 'update'])->name('admin.update.config');
+    Route::get('create', [AdminConfigController::class, 'createProcess'])->name('admin.config.processCreate');
+    Route::post('create', [AdminConfigController::class, 'create'])->name('admin.config.create');
+    Route::delete('delete/{id}', [AdminConfigController::class, 'delete'])->name('admin.delete.config');
 });

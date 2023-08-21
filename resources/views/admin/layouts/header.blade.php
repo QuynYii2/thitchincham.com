@@ -2,6 +2,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 @php
     $user = \Illuminate\Support\Facades\Auth::user();
+    $config = \App\Models\Config::where('status', \App\Enums\ConfigStatus::ACTIVE)->first();
 @endphp
     <div class="d-flex align-items-center justify-content-between">
         <a href="{{route('home')}}" class="logo d-flex align-items-center">

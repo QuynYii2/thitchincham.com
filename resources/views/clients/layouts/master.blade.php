@@ -41,6 +41,7 @@
 
 
 
+
     </script>
     <!-- / Yoast SEO plugin. -->
     <link rel='dns-prefetch' href='//translate.google.com'/>
@@ -830,7 +831,9 @@
 </head>
 
 <body class="home page-template page-template-templates page-template-template-homepage-one page-template-templatestemplate-homepage-one-php page page-id-13">
-
+@php
+    $config = \App\Models\Config::where('status', \App\Enums\ConfigStatus::ACTIVE)->first();
+@endphp
 <div id="page-wrapper" class="site">
     @include('clients.layouts.header')
     <div class="clearfix"></div>
@@ -894,12 +897,12 @@
     <div class="social-ring">
         <div class="social-ring-main">
             <div class="social-ring-content">
-                <a href="tel:1900234538" class="call-icon" rel="nofollow" target="_blank">
+                <a href="tel:{{$config->hotline}}" class="call-icon" rel="nofollow" target="_blank">
                     <img src="{{asset('assets/client/wp-content/uploads/2022/09/phone2.png')}}" width="132"
                          height="137" alt=""
                          decoding="async" loading="lazy"/>
                 </a>
-                <a href="https://www.facebook.com/quannhonhauxuyendem" class="mes" target="_blank">
+                <a href="{{$config->facebook}}" class="mes" target="_blank">
                     <img src="{{asset('assets/client/wp-content/uploads/2022/09/facebook.png')}}" width="132"
                          height="136" alt=""
                          decoding="async" loading="lazy"/>
