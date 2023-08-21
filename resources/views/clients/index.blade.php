@@ -2,6 +2,15 @@
 
 @section('title', 'Home page')
 
+<style>
+    .truncate-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+</style>
+
 @section('content')
     <section id="section-banner">
         <div class="background-overlay">
@@ -64,15 +73,9 @@
                             <img width="156" height="111"
                                  src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
                                  class="image-intro" alt="" decoding="async" loading="lazy"/>
-                            <h2 class="title-section">VỀ CHÚNG TÔI</h2>
-                            <div class="excerpt-introduce">
-                                <p>
-                                    <strong>Đến với Quán Nhỏ, bạn sẽ được trải nghiệm một Hồng Kông thu nhỏ ngay
-                                        giữa lòng Hà Nội. </strong>
-                                </p>
-                                <p>Với không gian đẳng cấp, đồ ăn ngon mang đặc trưng hương vị riêng biệt, nhân
-                                    viên chu đáo, nhiệt tình, mọi cuộc vui của bạn sẽ trở nên thăng hoa. Không
-                                    bao giờ chán, từ đêm đến sáng!</p>
+                            <h2 class="title-section">{{$news->title}}</h2>
+                            <div class="excerpt-introduce truncate-text">
+                                {!! $news->short_content !!}
                             </div>
                             <div class="box-image_introduce show_mobile">
                                 <img width="613" height="405"
@@ -122,17 +125,37 @@
                             @foreach($bestSellers as $menuItem)
                                 <div class="swiper-slide">
                                     <div class="item_slider_slick">
-                                        <a href="#">
-                                            <img width="768" height="768"
-                                                 src="{{ $menuItem->thumbnail }}"
-                                                 class="attachment-medium_large size-medium_large" alt=""
-                                                 decoding="async" loading="lazy"
-                                                 srcset="{{$menuItem->thumbnail}} 768w,
+                                        @php
+                                            $isCookie = false;
+                                            if (isset($_COOKIE["access"])){
+                                                $isCookie = true;
+                                            }
+                                        @endphp
+                                        @if($isCookie == true)
+                                            <a href="#" data-toggle="modal" data-target="#modalOrder">
+                                                <img width="768" height="768"
+                                                     src="{{ $menuItem->thumbnail }}"
+                                                     class="attachment-medium_large size-medium_large" alt=""
+                                                     decoding="async" loading="lazy"
+                                                     srcset="{{$menuItem->thumbnail}} 768w,
                                                  {{$menuItem->thumbnail}} 100w,
                                                  {{$menuItem->thumbnail}} 800w"
-                                                 sizes="(max-width: 768px) 100vw, 768px"/>
-                                        </a>
-                                        <p>{{$menuItem->name}}</p>
+                                                     sizes="(max-width: 768px) 100vw, 768px"/>
+                                            </a>
+                                            <p>{{$menuItem->name}}</p>
+                                        @else
+                                            <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                                <img width="768" height="768"
+                                                     src="{{ $menuItem->thumbnail }}"
+                                                     class="attachment-medium_large size-medium_large" alt=""
+                                                     decoding="async" loading="lazy"
+                                                     srcset="{{$menuItem->thumbnail}} 768w,
+                                                 {{$menuItem->thumbnail}} 100w,
+                                                 {{$menuItem->thumbnail}} 800w"
+                                                     sizes="(max-width: 768px) 100vw, 768px"/>
+                                            </a>
+                                            <p>{{$menuItem->name}}</p>
+                                        @endif
                                     </div>
                                 </div>
                             @endforeach
@@ -152,6 +175,73 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thông tin ngừoi đặt Menu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="submitInformation" method="post" action="{{route('create.information')}}">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" name="fullName" id="fullName"
+                                   placeholder="Nguyen Minh">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" name="email" id="inputEmail">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Phone Number</label>
+                                <input type="text" class="form-control" name="phoneNumber" id="inputPassword">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" name="address" id="inputAddress"
+                                   placeholder="1234 Main St">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOrderLabel">Menu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <section id="section-menu" class="sec-full section-menu">
         <img class="sec-img-full"
              src="{{asset('assets/client/wp-content/uploads/2022/09/bg_04.jpg')}}"
@@ -165,48 +255,25 @@
                 <h3 class="specail-title">MENU QUÁN NHỎ </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/" data-toggle="modal" data-target="#modal_img">
-                                    <img width="768" height="1150"
-                                         src="{{asset('assets/client/wp-content/uploads/2023/08/1-768x1150.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2023/08/1-768x1150.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/1-1026x1536.png')}} 1026w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/1.png')}} 1348w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/" data-toggle="modal" data-target="#modal_img">
-                                    <img width="768" height="1150"
-                                         src="{{asset('assets/client/wp-content/uploads/2023/08/2-768x1150.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2023/08/2-768x1150.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/2-1026x1536.png')}} 1026w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/2.png')}} 1354w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item_slider_slick">
-                                <a href="https://quannho.vn/menu/" data-toggle="modal" data-target="#modal_img">
-                                    <img width="768" height="1151"
-                                         src="{{asset('assets/client/wp-content/uploads/2023/08/3-768x1151.png')}}"
-                                         class="attachment-medium_large size-medium_large" alt=""
-                                         decoding="async" loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2023/08/3-768x1151.png')}} 768w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/3-1025x1536.png')}} 1025w,
-                                                 {{asset('assets/client/wp-content/uploads/2023/08/3.png')}} 1352w"
-                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                </a>
-                            </div>
-                        </div>
+                        @if(!$categories->isEmpty())
+                            @foreach($categories as $category)
+                                <div class="swiper-slide">
+                                    <div class="item_slider_slick">
+                                        <a href="#">
+                                            <img width="768" height="768"
+                                                 src="{{ $category->thumbnail }}"
+                                                 class="attachment-medium_large size-medium_large" alt=""
+                                                 decoding="async" loading="lazy"
+                                                 srcset="{{$category->thumbnail}} 768w,
+                                                 {{$category->thumbnail}} 100w,
+                                                 {{$category->thumbnail}} 800w"
+                                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                                        </a>
+                                        <p style="color: #000">{{$category->name}}</p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-next">
@@ -228,79 +295,51 @@
                 <img width="156" height="111"
                      src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
-                <h3 class="specail-title">ƯU ĐÃI ĐẶC BIỆT </h3>
+                <h3 class="specail-title">CÁC MÓN MỚI NHẤT</h3>
                 <div class="wrap-menu">
                     <div class="slider_sec_8 swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="item_slider_slick">
-                                    <a href="">
-                                        <img width="768" height="1152"
-                                             src="{{asset('assets/client/wp-content/uploads/2023/08/6-1-768x1152.png')}}"
-                                             class="attachment-medium_large size-medium_large" alt=""
-                                             decoding="async" loading="lazy"
-                                             srcset="{{asset('assets/client/wp-content/uploads/2023/08/6-1-768x1152.png')}} 768w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/6-1.png')}} 1000w"
-                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="item_slider_slick">
-                                    <a href="">
-                                        <img width="768" height="1277"
-                                             src="{{asset('assets/client/wp-content/uploads/2023/08/3-1-768x1277.png')}}"
-                                             class="attachment-medium_large size-medium_large" alt=""
-                                             decoding="async" loading="lazy"
-                                             srcset="{{asset('assets/client/wp-content/uploads/2023/08/3-1-768x1277.png')}} 768w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/3-1-924x1536.png')}} 924w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/3-1.png')}} 1198w"
-                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="item_slider_slick">
-                                    <a href="">
-                                        <img width="768" height="1289"
-                                             src="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.48.18-min-768x1289.png')}}"
-                                             class="attachment-medium_large size-medium_large" alt=""
-                                             decoding="async" loading="lazy"
-                                             srcset="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.48.18-min-768x1289.png')}} 768w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.48.18-min.png')}} 915w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.48.18-min.png')}} 1062w"
-                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="item_slider_slick">
-                                    <a href="">
-                                        <img width="768" height="1148"
-                                             src="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.49.10-min-768x1148.png')}}"
-                                             class="attachment-medium_large size-medium_large" alt=""
-                                             decoding="async" loading="lazy"
-                                             srcset="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.49.10-min-768x1148.png')}} 768w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.49.10-min.png')}} 1027w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-06-14-luc-14.49.10-min.png')}} 1176w"
-                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="item_slider_slick">
-                                    <a href="">
-                                        <img width="768" height="1290"
-                                             src="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-07-22-luc-09.26.23-768x1290.png')}}"
-                                             class="attachment-medium_large size-medium_large" alt=""
-                                             decoding="async" loading="lazy"
-                                             srcset="{{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-07-22-luc-09.26.23-768x1290.png')}} 768w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-07-22-luc-09.26.23-768x1290.png')}} 915w,
-                                                     {{asset('assets/client/wp-content/uploads/2023/08/Anh-chup-Man-hinh-2023-07-22-luc-09.26.23-768x1290.png')}} 1060w"
-                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                    </a>
-                                </div>
-                            </div>
+
+                            @if(!$newMenus->isEmpty())
+                                @foreach($newMenus as $menuItem)
+                                    <div class="swiper-slide">
+                                        <div class="item_slider_slick">
+                                            @php
+                                                $isCookie = false;
+                                                if (isset($_COOKIE["access"])){
+                                                    $isCookie = true;
+                                                }
+                                            @endphp
+                                            @if($isCookie == true)
+                                                <a href="#" data-toggle="modal" data-target="#modalOrder">
+                                                    <img width="768" height="768"
+                                                         src="{{ $menuItem->thumbnail }}"
+                                                         class="attachment-medium_large size-medium_large" alt=""
+                                                         decoding="async" loading="lazy"
+                                                         srcset="{{$menuItem->thumbnail}} 768w,
+                                                 {{$menuItem->thumbnail}} 100w,
+                                                 {{$menuItem->thumbnail}} 800w"
+                                                         sizes="(max-width: 768px) 100vw, 768px"/>
+                                                </a>
+                                                <p>{{$menuItem->name}}</p>
+                                            @else
+                                                <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                                    <img width="768" height="768"
+                                                         src="{{ $menuItem->thumbnail }}"
+                                                         class="attachment-medium_large size-medium_large" alt=""
+                                                         decoding="async" loading="lazy"
+                                                         srcset="{{$menuItem->thumbnail}} 768w,
+                                                 {{$menuItem->thumbnail}} 100w,
+                                                 {{$menuItem->thumbnail}} 800w"
+                                                         sizes="(max-width: 768px) 100vw, 768px"/>
+                                                </a>
+                                                <p>{{$menuItem->name}}</p>
+                                            @endif
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-next">

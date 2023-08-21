@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('status')->default(OrderStatus::WAIT_PAYMENT);
             $table->timestamps();
 
-            $table->foreign('information_id')->references('id')->on('informations')->onDelete('cascade');
+            $table->foreign('information_id')->references('id')->on('information')->onDelete('cascade');
         });
     }
 

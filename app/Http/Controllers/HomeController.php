@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\CategoryStatus;
 use App\Enums\MenuStatus;
 use App\Enums\NewsStatus;
 use App\Models\Category;
@@ -20,8 +21,12 @@ class HomeController extends Controller
             ['category_id', $categoryBestSeller->id],
             ['status', MenuStatus::ACTIVE]
         ])->get();
+
+        $newMenus = Menu::where('status', MenuStatus::ACTIVE)->orderBy('created_at', 'desc')->limit(6)->get();
         $listNews = News::where('status', '!=', NewsStatus::DELETED)->get();
-        return view('clients.index', compact('bestSellers', 'listNews'));
+        $news = News::where('title', 'Về chúng tôi')->first();
+        $categories = Category::where('status', CategoryStatus::ACTIVE)->orderBy('created_at', 'desc')->limit(6)->get();
+        return view('clients.index', compact('bestSellers', 'listNews', 'news', 'newMenus', 'categories'));
     }
 
     public function checkAdmin()
