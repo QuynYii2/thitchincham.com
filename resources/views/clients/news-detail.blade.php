@@ -20,10 +20,8 @@
         <div class="background-overlay">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img class="image-intro" style="margin:auto;margin-bottom:15px;"
-                             src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"/>
-                        <h2 class="title-single">{{ $news->title }}</h2>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <h1 class="title-single">{{ $news->title }}</h1>
                         <div class="entry-meta">
                                     <span class="post-time">
                                         <i class="far fa-calendar-alt"></i>
@@ -77,6 +75,28 @@
                                         </div>
                                     @endforeach
                                 @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                        <div class="vhsidebarnn">
+                            <div class="bn_title"><h3>Tin xem nhiều</h3></div>
+                            <div class="bn_content">
+                                <div class="w_item">
+                                    @foreach($mostViewedPosts as $mostViewedPost)
+                                        <div class="item">
+                                            <div class="i-image">
+                                                <a href="{{route('news.detail', $mostViewedPost->id)}}">
+                                                    <img src="{{ $mostViewedPost->thumbnail }}" alt="{{ $mostViewedPost->thumbnail }}">
+                                                </a>
+                                            </div>
+                                            <div class="i-title">
+                                                <a href="{{route('news.detail', $mostViewedPost->id)}}">{{ $mostViewedPost->title }}</a>
+                                            </div>
+                                        </div>
+                                    @endforeach
+
+                                </div>
                             </div>
                         </div>
                     </div>

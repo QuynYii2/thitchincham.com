@@ -29,6 +29,9 @@ class NewsController extends Controller
             ['status', NewsStatus::ACTIVE],
             ['id', '!=', $id]
         ])->limit(3)->orderBy('created_at', 'desc')->get();
-        return view('clients.news-detail', compact('news', 'moreNews'));
+        $mostViewedPosts = News::where([
+            ['status', NewsStatus::ACTIVE],
+        ])->limit(3)->orderBy('views', 'desc')->get();
+        return view('clients.news-detail', compact('news', 'moreNews', 'mostViewedPosts'));
     }
 }

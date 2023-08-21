@@ -30,9 +30,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img class="image-intro" style="margin:auto;margin-bottom:15px;"
-                             src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"/>
-                        <h2 class="title-single">{{ $menu->name }}</h2>
+
+
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="{{$menu->thumbnail}}" alt="">
@@ -40,16 +39,25 @@
                             <form method="post" action="{{route('order.create')}}">
                                 @csrf
                                 <div class="col-md-6">
+                                    <h2 class="title-single">{{ $menu->name }}</h2>
+                                    <div class="">Danh mục: {{$menu->category->name}}</div>
                                     <input type="text" value="{{$menu->id}}" name="menu_id" style="display: none">
                                     <input type="text" style="display: none" value="{{$menu->price}}" name="price">
-                                    <div class="text-center">Danh mục: {{$menu->category->name}}</div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <p>Giá cũ: {{$menu->old_price}}</p>
-                                        <p>Giá mới: <span class="text-danger">{{$menu->price}}</span></p>
+                                    <div class="diprice">
+                                        <div class="pname">Giá bán:</div>
+                                        <div class="pnews">{{$menu->old_price}}đ</div><div class="polds">{{$menu->price}}đ</div>
                                     </div>
-                                    <label for="quantity">Số lượng</label>
-                                    <input type="number" min="1" value="1" name="quantity" id="quantity"
-                                           class="form-control">
+                                    <div class="entry-content">
+                                        {!!$menu->short_description!!}
+                                        {!!$menu->description!!}
+                                    </div>
+                                    <!-- .entry-content -->
+                                    <div class="quantity">
+                                        <label for="quantity">Số lượng</label>
+                                        <input type="number" min="1" value="1" name="quantity" id="quantity"
+                                               class="form-control">
+                                    </div>
+
                                     @php
                                         $isCookie = false;
                                         if (isset($_COOKIE["information_id"])){
@@ -68,11 +76,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="entry-content">
-                            {!!$menu->short_description!!}
-                            {!!$menu->description!!}
-                        </div>
-                        <!-- .entry-content -->
+
                         <div class="related-post">
                             <!-- Hiển thị bài viết theo category -->
                             <h3 class="related-title">
@@ -99,8 +103,16 @@
                                                     </a>
                                                 </div>
                                                 <div class="info-posts">
-                                                    <a class="name-posts"
-                                                       href="{{route('menu.detail', $moreMenusItem->id)}}">{{$moreMenusItem->name}}</a>
+                                                    <a class="name-posts"  href="{{route('menu.detail', $moreMenusItem->id)}}">{{$moreMenusItem->name}}</a>
+                                                    <div class="dsprice">
+                                                        <div class="pname">Giá:</div>
+                                                        <div class="pnews">{{$moreMenusItem->old_price}}đ</div><div class="polds">{{$moreMenusItem->price}}đ</div>
+                                                    </div>
+                                                    <div class="dsview">
+                                                        <div class="viewfood">
+                                                            <a href="{{route('menu.detail', $moreMenusItem->id)}}">XEM CHI TIẾT</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

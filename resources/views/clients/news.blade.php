@@ -57,8 +57,15 @@
                                                 </a>
                                             </div>
                                             <div class="info-posts">
-                                                <a class="name-posts"
-                                                   href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
+                                                <a class="name-posts" href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
+                                                <div class="dsprice">
+                                                    {{ strip_tags($news->short_content) }}
+                                                </div>
+                                                <div class="dsview">
+                                                    <div class="viewfood">
+                                                        <a href="{{route('news.detail', $news->id)}}">XEM CHI TIẾT</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

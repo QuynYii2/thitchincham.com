@@ -122,7 +122,7 @@
                 <img width="156" height="111"
                      src="{{$config->logo}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
-                <h3 class="specail-title">BEST SELLER </h3>
+                <h3 class="specail-title">MÓN ĂN ĐƯỢC ĐẶT NHIỀU </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
                         @if(!$bestSellers->isEmpty())
@@ -140,6 +140,18 @@
                                                  sizes="(max-width: 768px) 100vw, 768px"/>
                                         </a>
                                         <p>{{$menuItem->name}}</p>
+                                        <div class="info-posts">
+                                            <a class="name-posts"  href="{{route('menu.detail', $menuItem->id)}}">{{$menuItem->name}}</a>
+                                            <div class="dsprice">
+                                                <div class="pname">Giá:</div>
+                                                <div class="pnews">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
+                                            </div>
+                                            <div class="dsview">
+                                                <div class="viewfood">
+                                                    <a href="{{route('menu.detail', $menuItem->id)}}">XEM CHI TIẾT</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             @endforeach
@@ -170,7 +182,7 @@
                 <img width="156" height="111"
                      src="{{$config->logo}}"
                      class="image-specail" alt="" decoding="async" loading="lazy"/>
-                <h3 class="specail-title">MENU QUÁN NHỎ </h3>
+                <h3 class="specail-title">DAMH MỤC SẢN PHẨM </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
                         @if(!$categories->isEmpty())

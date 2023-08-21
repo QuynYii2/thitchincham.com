@@ -880,7 +880,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p class="copyright">Copyright © 2016. All rights reserved. Bản quyền thuộc về quannho.vn
+                    <p class="copyright">Copyright © 2016. All rights reserved. Bản quyền thuộc về thitchincham.com
                     </p>
                 </div>
             </div>

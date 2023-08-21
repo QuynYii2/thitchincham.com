@@ -40,7 +40,7 @@
                             @if(!$menus->isEmpty())
                                 @foreach($menus as $menu)
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 colums-posts">
-                                        <div class="box-posts">
+                                        <div class="box-posts ">
                                             <div class="img-posts">
                                                 <a href="{{route('menu.detail', $menu->id)}}">
                                                     <img width="768" height="512"
@@ -55,8 +55,16 @@
                                                 </a>
                                             </div>
                                             <div class="info-posts">
-                                                <a class="name-posts"
-                                                   href="{{route('menu.detail', $menu->id)}}">{{$menu->name}}</a>
+                                                <a class="name-posts"  href="{{route('menu.detail', $menu->id)}}">{{$menu->name}}</a>
+                                                <div class="dsprice">
+                                                    <div class="pname">Giá:</div>
+                                                    <div class="pnews">{{$menu->old_price}}đ</div><div class="polds">{{$menu->price}}đ</div>
+                                                </div>
+                                                <div class="dsview">
+                                                    <div class="viewfood">
+                                                        <a href="{{route('menu.detail', $menu->id)}}">XEM CHI TIẾT</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
