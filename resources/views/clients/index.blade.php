@@ -125,37 +125,17 @@
                             @foreach($bestSellers as $menuItem)
                                 <div class="swiper-slide">
                                     <div class="item_slider_slick">
-                                        @php
-                                            $isCookie = false;
-                                            if (isset($_COOKIE["access"])){
-                                                $isCookie = true;
-                                            }
-                                        @endphp
-                                        @if($isCookie == true)
-                                            <a href="#" data-toggle="modal" data-target="#modalOrder">
-                                                <img width="768" height="768"
-                                                     src="{{ $menuItem->thumbnail }}"
-                                                     class="attachment-medium_large size-medium_large" alt=""
-                                                     decoding="async" loading="lazy"
-                                                     srcset="{{$menuItem->thumbnail}} 768w,
+                                        <a href="{{route('menu.detail', $menuItem->id)}}">
+                                            <img width="768" height="768"
+                                                 src="{{ $menuItem->thumbnail }}"
+                                                 class="attachment-medium_large size-medium_large" alt=""
+                                                 decoding="async" loading="lazy"
+                                                 srcset="{{$menuItem->thumbnail}} 768w,
                                                  {{$menuItem->thumbnail}} 100w,
                                                  {{$menuItem->thumbnail}} 800w"
-                                                     sizes="(max-width: 768px) 100vw, 768px"/>
-                                            </a>
-                                            <p>{{$menuItem->name}}</p>
-                                        @else
-                                            <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img width="768" height="768"
-                                                     src="{{ $menuItem->thumbnail }}"
-                                                     class="attachment-medium_large size-medium_large" alt=""
-                                                     decoding="async" loading="lazy"
-                                                     srcset="{{$menuItem->thumbnail}} 768w,
-                                                 {{$menuItem->thumbnail}} 100w,
-                                                 {{$menuItem->thumbnail}} 800w"
-                                                     sizes="(max-width: 768px) 100vw, 768px"/>
-                                            </a>
-                                            <p>{{$menuItem->name}}</p>
-                                        @endif
+                                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                                        </a>
+                                        <p>{{$menuItem->name}}</p>
                                     </div>
                                 </div>
                             @endforeach
@@ -175,72 +155,6 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thông tin ngừoi đặt Menu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="submitInformation" method="post" action="{{route('create.information')}}">
-                    @csrf
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" name="fullName" id="fullName"
-                                   placeholder="Nguyen Minh">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" name="email" id="inputEmail">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword">Phone Number</label>
-                                <input type="text" class="form-control" name="phoneNumber" id="inputPassword">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" name="address" id="inputAddress"
-                                   placeholder="1234 Main St">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalOrderLabel">Menu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Order</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <section id="section-menu" class="sec-full section-menu">
         <img class="sec-img-full"
@@ -259,7 +173,7 @@
                             @foreach($categories as $category)
                                 <div class="swiper-slide">
                                     <div class="item_slider_slick">
-                                        <a href="#">
+                                        <a href="{{route('menu.detail', $menuItem->id)}}">
                                             <img width="768" height="768"
                                                  src="{{ $category->thumbnail }}"
                                                  class="attachment-medium_large size-medium_large" alt=""
@@ -304,37 +218,17 @@
                                 @foreach($newMenus as $menuItem)
                                     <div class="swiper-slide">
                                         <div class="item_slider_slick">
-                                            @php
-                                                $isCookie = false;
-                                                if (isset($_COOKIE["access"])){
-                                                    $isCookie = true;
-                                                }
-                                            @endphp
-                                            @if($isCookie == true)
-                                                <a href="#" data-toggle="modal" data-target="#modalOrder">
-                                                    <img width="768" height="768"
-                                                         src="{{ $menuItem->thumbnail }}"
-                                                         class="attachment-medium_large size-medium_large" alt=""
-                                                         decoding="async" loading="lazy"
-                                                         srcset="{{$menuItem->thumbnail}} 768w,
+                                            <a href="{{route('menu.detail', $menuItem->id)}}">
+                                                <img width="768" height="768"
+                                                     src="{{ $menuItem->thumbnail }}"
+                                                     class="attachment-medium_large size-medium_large" alt=""
+                                                     decoding="async" loading="lazy"
+                                                     srcset="{{$menuItem->thumbnail}} 768w,
                                                  {{$menuItem->thumbnail}} 100w,
                                                  {{$menuItem->thumbnail}} 800w"
-                                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                                </a>
-                                                <p>{{$menuItem->name}}</p>
-                                            @else
-                                                <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                    <img width="768" height="768"
-                                                         src="{{ $menuItem->thumbnail }}"
-                                                         class="attachment-medium_large size-medium_large" alt=""
-                                                         decoding="async" loading="lazy"
-                                                         srcset="{{$menuItem->thumbnail}} 768w,
-                                                 {{$menuItem->thumbnail}} 100w,
-                                                 {{$menuItem->thumbnail}} 800w"
-                                                         sizes="(max-width: 768px) 100vw, 768px"/>
-                                                </a>
-                                                <p>{{$menuItem->name}}</p>
-                                            @endif
+                                                     sizes="(max-width: 768px) 100vw, 768px"/>
+                                            </a>
+                                            <p>{{$menuItem->name}}</p>
                                         </div>
                                     </div>
                                 @endforeach
@@ -351,7 +245,7 @@
                     </div>
                 </div>
                 <div class="readmore-section">
-                    <a href="#">Xem thêm </a>
+                    <a href="{{route('menu.index')}}">Xem thêm </a>
                 </div>
             </div>
         </div>

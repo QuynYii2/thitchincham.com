@@ -56,7 +56,7 @@
                                 @foreach($categories as $category)
                                     <li id="menu-item-{{$category->id}}"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                        <a href="{{route('menu.index')}}">{{$category->name}}</a>
+                                        <a href="{{route('menu.category.list', $category->id)}}">{{$category->name}}</a>
                                     </li>
                                 @endforeach
                             </ul>
