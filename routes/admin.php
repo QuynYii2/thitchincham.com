@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminMenuController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminOrderController;
+use App\Http\Controllers\Admin\ExportController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin.home');
@@ -56,6 +57,8 @@ Route::group(['prefix' => 'orders'], function () {
     Route::get('detail/{id}', [AdminOrderController::class, 'detail'])->name('admin.show.detail.order');
     Route::put('update/{id}', [AdminOrderController::class, 'update'])->name('admin.update.order');
     Route::delete('delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.delete.order');
+
+    Route::get('export-order', [ExportController::class, 'exportOrder'])->name('admin.export.order');
 });
 
 // Config
