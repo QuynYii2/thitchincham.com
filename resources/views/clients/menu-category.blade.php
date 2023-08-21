@@ -34,7 +34,7 @@
                              height="111" alt=""
                              decoding="async" loading="lazy"/>
                         <h2 class="page-title">
-                            <span>Menu</span>
+                            <span>{{$category->name}}</span>
                         </h2>
                         <div class="row">
                             @if(!$menus->isEmpty())

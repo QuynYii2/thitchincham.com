@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BranchController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InformationController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\RecruitmentController;
@@ -29,10 +31,13 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // PermitALl
 Route::get('about-us', [ConfigController::class, 'aboutUs'])->name('about.us');
 Route::get('menu', [MenuController::class, 'index'])->name('menu.index');
+Route::get('menu-category/{id}', [CategoryController::class, 'list'])->name('menu.category.list');
+Route::get('menu-detail/{id}', [MenuController::class, 'detail'])->name('menu.detail');
 Route::get('news', [NewsController::class, 'index'])->name('news.index');
 Route::get('news-detail/{id}', [NewsController::class, 'detail'])->name('news.detail');
 Route::get('branch', [BranchController::class, 'index'])->name('branch.index');
 Route::get('recruitment', [RecruitmentController::class, 'index'])->name('recruitment.index');
+Route::post('create-information', [InformationController::class, 'store'])->name('create.information');
 
 
 // Auth

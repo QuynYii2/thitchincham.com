@@ -50,10 +50,15 @@
                                 Menu <i class="caret"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li id="menu-item-458"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                    <a href="{{route('menu.index')}}">Menu</a>
-                                </li>
+                                @php
+                                    $categories = \App\Models\Category::where('status', \App\Enums\CategoryStatus::ACTIVE)->get();
+                                @endphp
+                                @foreach($categories as $category)
+                                    <li id="menu-item-{{$category->id}}"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
+                                        <a href="{{route('menu.category.list', $category->id)}}">{{$category->name}}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </li>
                         <li id="menu-item-453"
