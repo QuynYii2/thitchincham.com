@@ -17,12 +17,12 @@ return new class extends Migration
             $table->decimal('price');
             $table->decimal('quantity');
             $table->unsignedBigInteger('order_id');
-            $table->unsignedBigInteger('information_id');
+            $table->unsignedBigInteger('menu_id');
             $table->string('status')->default(OrderStatus::WAIT_PAYMENT);
             $table->timestamps();
 
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
-            $table->foreign('information_id')->references('id')->on('information')->onDelete('cascade');
+            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade');
         });
     }
 

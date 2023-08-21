@@ -33,21 +33,45 @@
                         <img class="image-intro" style="margin:auto;margin-bottom:15px;"
                              src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}"/>
                         <h2 class="title-single">{{ $menu->name }}</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="{{$menu->thumbnail}}" alt="">
+                            </div>
+                            <form method="post" action="{{route('order.create')}}">
+                                @csrf
+                                <div class="col-md-6">
+                                    <input type="text" value="{{$menu->id}}" name="menu_id" style="display: none">
+                                    <input type="text" style="display: none" value="{{$menu->price}}" name="price">
+                                    <div class="text-center">Danh mục: {{$menu->category->name}}</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Giá cũ: {{$menu->old_price}}</p>
+                                        <p>Giá mới: <span class="text-danger">{{$menu->price}}</span></p>
+                                    </div>
+                                    <label for="quantity">Số lượng</label>
+                                    <input type="number" min="1" value="1" name="quantity" id="quantity"
+                                           class="form-control">
+                                    @php
+                                        $isCookie = false;
+                                        if (isset($_COOKIE["information_id"])){
+                                            $isCookie = true;
+                                        }
+                                    @endphp
+                                    @if($isCookie == true)
+                                        <button class="btn btn-success" type="submit">Đặt
+                                            ngay
+                                        </button>
+                                    @else
+                                        <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Đặt
+                                            ngay
+                                        </a>
+                                    @endif
+                                </div>
+                            </form>
+                        </div>
                         <div class="entry-content">
                             {!!$menu->short_description!!}
                             {!!$menu->description!!}
                         </div>
-                        @php
-                            $isCookie = false;
-                            if (isset($_COOKIE["information_id"])){
-                                $isCookie = true;
-                            }
-                        @endphp
-                        @if($isCookie == true)
-                            <button class="btn btn-success" data-toggle="modal" data-target="#modalOrder">Đặt ngay</button>
-                        @else
-                            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Đặt ngay</button>
-                        @endif
                         <!-- .entry-content -->
                         <div class="related-post">
                             <!-- Hiển thị bài viết theo category -->
@@ -133,26 +157,26 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalOrderLabel">Menu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Order</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    {{--    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel"--}}
+    {{--         aria-hidden="true">--}}
+    {{--        <div class="modal-dialog" role="document">--}}
+    {{--            <div class="modal-content">--}}
+    {{--                <div class="modal-header">--}}
+    {{--                    <h5 class="modal-title" id="modalOrderLabel">Menu</h5>--}}
+    {{--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
+    {{--                        <span aria-hidden="true">&times;</span>--}}
+    {{--                    </button>--}}
+    {{--                </div>--}}
+    {{--                <form>--}}
+    {{--                    <div class="modal-body">--}}
+    {{--                        ...--}}
+    {{--                    </div>--}}
+    {{--                    <div class="modal-footer">--}}
+    {{--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
+    {{--                        <button type="button" class="btn btn-primary">Order</button>--}}
+    {{--                    </div>--}}
+    {{--                </form>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </div>--}}
 @endsection

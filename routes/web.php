@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RecruitmentController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +39,8 @@ Route::get('news-detail/{id}', [NewsController::class, 'detail'])->name('news.de
 Route::get('branch', [BranchController::class, 'index'])->name('branch.index');
 Route::get('recruitment', [RecruitmentController::class, 'index'])->name('recruitment.index');
 Route::post('create-information', [InformationController::class, 'store'])->name('create.information');
+
+Route::post('create-order', [OrderController::class, 'store'])->name('order.create');
 
 
 // Auth

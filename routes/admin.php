@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminMenuController;
 use App\Http\Controllers\Admin\AdminNewsController;
+use App\Http\Controllers\Admin\AdminOrderController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', [AdminHomeController::class, 'dashboard'])->name('admin.home');
@@ -46,4 +47,13 @@ Route::group(['prefix' => 'news'], function () {
     Route::get('create', [AdminNewsController::class, 'createProcess'])->name('admin.news.processCreate');
     Route::post('create', [AdminNewsController::class, 'create'])->name('admin.news.create');
     Route::delete('delete/{id}', [AdminNewsController::class, 'delete'])->name('admin.delete.news');
+});
+
+
+// News
+Route::group(['prefix' => 'orders'], function () {
+    Route::get('list', [AdminOrderController::class, 'index'])->name('admin.show.all.orders');
+    Route::get('detail/{id}', [AdminOrderController::class, 'detail'])->name('admin.show.detail.order');
+    Route::put('update/{id}', [AdminOrderController::class, 'update'])->name('admin.update.order');
+    Route::delete('delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.delete.order');
 });
