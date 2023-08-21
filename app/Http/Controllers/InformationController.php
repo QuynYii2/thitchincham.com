@@ -19,9 +19,6 @@ class InformationController extends Controller
             ];
             Information::create($info);
             $newInfo = Information::where('email', $request->input('email'))->orderBy('created_at', 'desc')->first();
-//            $minutes = 60;
-//            $response = new Response('Set Cookie');
-//            $response->withCookie(cookie('information_id', $newInfo->id, $minutes));
             setcookie("information_id", $newInfo->id, time() + 3600, "/");
             return back();
         } catch (\Exception $exception) {
