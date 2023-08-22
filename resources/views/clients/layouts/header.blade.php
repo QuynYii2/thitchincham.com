@@ -70,14 +70,14 @@
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
                             <a href="{{route('news.index')}}">News &amp;Events</a>
                         </li>
-                        <li id="menu-item-454"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                            <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
-                        </li>
-                        <li id="menu-item-496"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                            <a href="{{route('branch.index')}}">Chi nhánh</a>
-                        </li>
+{{--                        <li id="menu-item-454"--}}
+{{--                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">--}}
+{{--                            <a href="{{route('recruitment.index')}}">Tuyển dụng</a>--}}
+{{--                        </li>--}}
+{{--                        <li id="menu-item-496"--}}
+{{--                            class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">--}}
+{{--                            <a href="{{route('branch.index')}}">Chi nhánh</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
                 <!-- Menu Toggle -->
@@ -110,12 +110,12 @@
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
                         <a href="{{route('news.index')}}">News &amp;Events</a>
                     </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                        <a href="{{route('branch.index')}}">Chi nhánh</a>
-                    </li>
+{{--                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">--}}
+{{--                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">--}}
+{{--                        <a href="{{route('branch.index')}}">Chi nhánh</a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
             <a class="menu_close">

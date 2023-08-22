@@ -1769,10 +1769,13 @@ h2.title-single {
     font-family: 'Lalezar';
     font-size: 40px;
     line-height: 50px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Lalezar';
     color: #9a3324;
     text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 h1.title-single {
     font-size: 50px;
@@ -1988,12 +1991,11 @@ section#blog-schools {
 }
 
 .box-cn {
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_cn.png) no-repeat;
     width: 100%;
     height: 288px;
     text-align: center;
     overflow: hidden;
-    padding: 50px;
+    padding: 20px;
     background-size: 100%;
 }
 
@@ -2016,7 +2018,6 @@ h3.box-cn-h3 {
 
 p.box-cn-diachi {
     font-size: 16px;
-    color: #ffffff;
 }
 
 a.box-cn-button {}
@@ -2024,17 +2025,16 @@ a.box-cn-button {}
 a.box-cn-button {
     display: inline-block;
     font-size: 18px;
-    color: #ffffff;
     font-family: Nunito;
     margin: 0px 5px;
-    width: 171px;
-    height: 71px;
-    line-height: 71px;
-    background: url(/quan_nho/wp-content/themes/C5group/images/btn_qn1.png?sdf) no-repeat center center;
+    width: 135px;
+    line-height: 30px;
     position: absolute;
-    bottom: 40px;
-    left: 50%;
+    bottom: 61px;
+    left: 55%;
     margin-left: -86px;
+    color: white;
+    background: black;
 }
 
 section#blog-schools:before {
@@ -2042,36 +2042,8 @@ section#blog-schools:before {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_luon_cn.jpg) no-repeat bottom;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     z-index: 99;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     height: 200px;
-    ;
-    ;
-    ;
-    ;
-    ;
 }
 
 section#blog-schools {
@@ -2080,290 +2052,8 @@ section#blog-schools {
 }
 
 .row.row-cn-detail {
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_vong.png) no-repeat top center;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     padding: 111px 121px 111px 142px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     background-size: 100%;
-    ;
-    ;
-    ;
-    ;
 }
 
 h3.h3-cn {
@@ -2380,129 +2070,7 @@ p.p-cn {
 
 .column1-cn {
     margin-top: 28px;
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_next.png) no-repeat left top;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     padding-left: 58px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
 }
 
 .column2-cn {
@@ -2527,7 +2095,6 @@ span.page-numbers.current {
 
 .item-banner:before {
     content: "";
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_banner.png) no-repeat center bottom;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2599,7 +2166,6 @@ span.page-numbers.current {
     }
 
     .home section:nth-child(2n + 1) {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg11.jpg);
         padding: 30px 0px;
     }
 
@@ -2760,18 +2326,15 @@ span.page-numbers.current {
 
 
     .item-banner:before {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_03.png) no-repeat center bottom;
         background-size: 100%;
     }
 
     section#section-introduce {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_01.jpg);
         padding-bottom: 60px;
     }
 
     section#section-introduce:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_01.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2781,7 +2344,6 @@ span.page-numbers.current {
     }
 
     section#section-specail {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_02.jpg);
         padding-bottom: 60px;
         color: #ffffff
     }
@@ -2797,7 +2359,6 @@ span.page-numbers.current {
 
     section#section-specail:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_02.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2807,14 +2368,12 @@ span.page-numbers.current {
     }
 
     section#section-menu {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_02-1.jpg);
         padding-bottom: 60px;
         color: #ffffff
     }
 
     section#section-menu:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_01.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2827,7 +2386,6 @@ span.page-numbers.current {
     section#section-menu {}
 
     section#section-km {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_02.jpg);
         padding-bottom: 60px;
         color: #ffffff
     }
@@ -2835,7 +2393,6 @@ span.page-numbers.current {
 
     section#section-km:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_02.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2845,14 +2402,12 @@ span.page-numbers.current {
     }
 
     section#section-news {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_02-1.jpg);
         padding-bottom: 60px;
         color: #ffffff
     }
 
     section#section-news:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_03.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2862,8 +2417,6 @@ span.page-numbers.current {
     }
 
     section#section-app {
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_mb_04.jpg);
-        padding-bottom: 60px;
         color: #ffffff;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -2872,7 +2425,6 @@ span.page-numbers.current {
 
     section#section-app:before {
         content: "";
-        background: url(/quan_nho/wp-content/uploads/2022/09/bg_nen_01.png) no-repeat center bottom;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -2964,7 +2516,6 @@ span.page-numbers.current {
 
 .section-bread:before {
     content: "";
-    background: url(/quan_nho/wp-content/uploads/2022/09/luon_trang.png) no-repeat center bottom;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2974,17 +2525,11 @@ span.page-numbers.current {
 
 .bread-cn:before {
     content: "";
-    background: url(/quan_nho/wp-content/uploads/2022/09/luon_den.png) no-repeat center bottom;
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
     z-index: 9;
-}
-
-.info-posts {
-    height: 29px;
-    overflow: hidden;
 }
 
 @media(max-width:700px) {
