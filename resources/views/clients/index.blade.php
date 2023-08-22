@@ -6,8 +6,11 @@
     .truncate-text {
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
         width: 100%;
+        height: 125px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
 </style>
 

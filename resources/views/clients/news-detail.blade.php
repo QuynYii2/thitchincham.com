@@ -6,7 +6,7 @@
     <section id="section-banner" class="section-bread">
         <div class="background-overlay">
             <img class="image-banner-full"
-                 src="{{asset('assets/client/wp-content/uploads/2022/10/LEO09129-scaled.jpg')}}"/>
+                 src="{{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}}"/>
             <div class="containter">
                 <div class="sb-content">
                     <img class="sb-content-img"
