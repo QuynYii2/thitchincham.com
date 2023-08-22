@@ -2701,10 +2701,6 @@ span.page-numbers.current {
     margin-top: 13px
 }
 
-.box-posts .info-posts {
-    height: 180px;
-}
-
 @media (min-width:1300px) and (max-width:1690px) {
     .item-banner {
         max-height: 650px
