@@ -56,7 +56,7 @@
                                             <div class="box-posts">
                                                 <div class="img-posts">
                                                     <a href="{{route('news.detail', $moreNewsItem->id)}}">
-                                                        <img width="768" height="512"
+                                                        <img width="768" height="512" style="object-fit: cover"
                                                              src="{{ $moreNewsItem->thumbnail }}"
                                                              class="attachment-medium_large size-medium_large wp-post-image"
                                                              alt="{{$moreNewsItem->title}}"
