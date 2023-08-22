@@ -1418,6 +1418,8 @@ h2.entry-title a {
     clear: both;
     padding: 0px;
     text-align: justify;
+    margin: 20px 0;
+    font-size: 17px;
 }
 
 .entry-content .aligncenter {

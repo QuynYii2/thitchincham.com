@@ -17,42 +17,42 @@
             <div id="banner-carousel" class="owl-carousel owl-theme">
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/TX_00211-min-9-scaled.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/TX_00211-min-9-scaled.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/TX_00211-min-9-768x512.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/TX_00211-min-9-1536x1024.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/TX_00211-min-9-2048x1365.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/LEO09720-min-scaled.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/LEO09720-min-scaled.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09720-min-768x512.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09720-min-1536x1024.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09720-min-2048x1365.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/LEO09781-min-1-scaled.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/LEO09781-min-1-scaled.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09781-min-1-768x512.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09781-min-1-1536x1024.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/LEO09781-min-1-2048x1365.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
             </div>
         </div>
         <div class="containter">
             <div class="sb-content">
-                <img class="sb-content-img"
-                     src="{{asset('assets/client/wp-content/uploads/2022/09/image_slider.png')}}"
-                     width="810" height="329" alt="" decoding="async" loading="lazy"/>
-                <p class="sb-content-p">Toạ Độ Ăn Chơi Bậc Nhất Hà Thành </p>
+{{--                <img class="sb-content-img"--}}
+{{--                     src="{{asset('assets/client/wp-content/uploads/2022/09/image_slider.png')}}"--}}
+{{--                     width="810" height="329" alt="" decoding="async" loading="lazy"/>--}}
+{{--                <p class="sb-content-p">Toạ Độ Ăn Chơi Bậc Nhất Hà Thành </p>--}}
                 <p class="sp-content-button">
                     @if($config)
                         <a class="sp-button-xt" href="{{$config->facebook}}">Xem thêm</a>
@@ -82,12 +82,12 @@
                                 </div>
                                 <div class="box-image_introduce show_mobile">
                                     <img width="613" height="405"
-                                         src="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}}"
+                                         src="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}}"
                                          class="attachment-medium_large size-medium_large" alt="" decoding="async"
                                          loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}} 613w,
-                                             {{asset('assets/client/wp-content/uploads/2022/09/img_intro-360x238.png')}} 360w,
-                                             {{asset('assets/client/wp-content/uploads/2022/09/img_intro-120x80.png')}} 120w"
+                                         srcset="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 613w,
+                                             {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 360w,
+                                             {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 120w"
                                          sizes="(max-width: 613px) 100vw, 613px"/>
                                 </div>
                                 <div class="readmore-section">
@@ -99,12 +99,12 @@
                     <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 show_pc" data-wow-delay="0.5s">
                         <div class="box-image_introduce">
                             <img width="613" height="405"
-                                 src="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}}"
+                                 src="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}}"
                                  class="attachment-medium_large size-medium_large" alt="" decoding="async"
                                  loading="lazy"
-                                 srcset="{{asset('assets/client/wp-content/uploads/2022/09/img_intro.png')}} 613w,
-                                         {{asset('assets/client/wp-content/uploads/2022/09/img_intro-360x238.png')}} 360w,
-                                         {{asset('assets/client/wp-content/uploads/2022/09/img_intro-120x80.png')}} 120w"
+                                 srcset="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 613w,
+                                         {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 360w,
+                                         {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 120w"
                                  sizes="(max-width: 613px) 100vw, 613px"/>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <div class="swiper-slide">
                                     <div class="item_slider_slick">
                                         <a href="{{route('menu.detail', $menuItem->id)}}">
-                                            <img width="768" height="768"
+                                            <img style="width: 768px; height: 210px; object-fit: cover"
                                                  src="{{ $menuItem->thumbnail }}"
                                                  class="attachment-medium_large size-medium_large" alt=""
                                                  decoding="async" loading="lazy"
@@ -141,13 +141,12 @@
                                         </a>
                                         <p>{{$menuItem->name}}</p>
                                         <div class="info-posts">
-                                            <a class="name-posts"  href="{{route('menu.detail', $menuItem->id)}}">{{$menuItem->name}}</a>
-                                            <div class="dsprice">
-                                                <div class="pname">Giá:</div>
-                                                <div class="pnews">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
+                                            <div class="dsprice" style="color: white">
+                                                <div class="pname" style="color: white">Giá:</div>
+                                                <div class="pnews" style="color: white">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
                                             </div>
                                             <div class="dsview">
-                                                <div class="viewfood">
+                                                <div class="viewfood" style="color: white">
                                                     <a href="{{route('menu.detail', $menuItem->id)}}">XEM CHI TIẾT</a>
                                                 </div>
                                             </div>
@@ -188,20 +187,27 @@
                         @if(!$categories->isEmpty())
                             @foreach($categories as $category)
                                 <div class="swiper-slide">
-                                    <div class="item_slider_slick">
-                                        <a href="{{route('menu.detail', $menuItem->id)}}">
-                                            <img width="768" height="768"
-                                                 src="{{ $category->thumbnail }}"
-                                                 class="attachment-medium_large size-medium_large" alt=""
-                                                 decoding="async" loading="lazy"
-                                                 srcset="{{$category->thumbnail}} 768w,
+                                <div class="item_slider_slick">
+                                    <a href="{{route('menu.detail', $menuItem->id)}}">
+                                        <img style="width: 768px; height: 300px; object-fit: cover"
+                                             src="{{ $category->thumbnail }}"
+                                             class="attachment-medium_large size-medium_large" alt=""
+                                             decoding="async" loading="lazy"
+                                             srcset="{{$category->thumbnail}} 768w,
                                                  {{$category->thumbnail}} 100w,
                                                  {{$category->thumbnail}} 800w"
-                                                 sizes="(max-width: 768px) 100vw, 768px"/>
-                                        </a>
-                                        <p style="color: #000">{{$category->name}}</p>
+                                             sizes="(max-width: 768px) 100vw, 768px"/>
+                                    </a>
+                                    <p style="color: black">{{$category->name}}</p>
+                                    <div class="info-posts">
+                                        <div class="dsview">
+                                            <div class="viewfood" style="color: black">
+                                                <a href="{{route('menu.detail', $category->id)}}">XEM CHI TIẾT</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
                             @endforeach
                         @endif
                     </div>
@@ -235,7 +241,7 @@
                                     <div class="swiper-slide">
                                         <div class="item_slider_slick">
                                             <a href="{{route('menu.detail', $menuItem->id)}}">
-                                                <img width="768" height="768"
+                                                <img style="width: 768px; height: 210px; object-fit: cover"
                                                      src="{{ $menuItem->thumbnail }}"
                                                      class="attachment-medium_large size-medium_large" alt=""
                                                      decoding="async" loading="lazy"
@@ -245,6 +251,17 @@
                                                      sizes="(max-width: 768px) 100vw, 768px"/>
                                             </a>
                                             <p>{{$menuItem->name}}</p>
+                                            <div class="info-posts">
+                                                <div class="dsprice" style="color: white">
+                                                    <div class="pname" style="color: white">Giá:</div>
+                                                    <div class="pnews" style="color: white">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
+                                                </div>
+                                                <div class="dsview">
+                                                    <div class="viewfood" style="color: white">
+                                                        <a href="{{route('menu.detail', $menuItem->id)}}">XEM CHI TIẾT</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -377,9 +394,9 @@
                         </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-app colums-app2">
-                        <img src="{{asset('assets/client/wp-content/uploads/2023/08/phone3.png')}}" width="542"
-                             height="579"
-                             alt="" decoding="async" loading="lazy"/>
+{{--                        <img src="{{asset('assets/client/wp-content/uploads/2023/08/phone3.png')}}" width="542"--}}
+{{--                             height="579"--}}
+{{--                             alt="" decoding="async" loading="lazy"/>--}}
                     </div>
                 </div>
             </div>
