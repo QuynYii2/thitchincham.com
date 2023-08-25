@@ -295,7 +295,7 @@
                 <img class="image-specail" src="{{$config->logo}}"
                      width="156"
                      height="111" alt="" decoding="async" loading="lazy"/>
-                <h3 class="specail-title">NEWS &EVENTS
+                <h3 class="specail-title">TIN TỨC
                 </h3>
 
                 <div class="row content-news">

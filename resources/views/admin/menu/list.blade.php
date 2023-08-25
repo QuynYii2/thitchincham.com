@@ -27,7 +27,6 @@
                     <th scope="col">Menu Name</th>
                     <th scope="col">Category Name</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Old Price</th>
                     <th scope="col">Create By</th>
                     <th scope="col">Active</th>
                     <th scope="col">Status</th>
@@ -43,8 +42,7 @@
                             <td>
                                 {{$menu->category->name}}
                             </td>
-                            <td>{{$menu->price}}</td>
-                            <td>{{$menu->old_price}}</td>
+                            <td>{{$menu->price}}.000đ</td>
                             <td>
                                 {{$menu->user->fullName}}
                             </td>

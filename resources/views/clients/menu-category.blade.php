@@ -16,12 +16,6 @@
                  {{asset('assets/client/wp-content/uploads/2022/10/LEO09129-1536x1024.jpg')}} 1536w,
                  {{asset('assets/client/wp-content/uploads/2022/10/LEO09129-2048x1365.jpg')}} 2048w"
                  sizes="(max-width: 2560px) 100vw, 2560px"/>
-            <div class="containter">
-                <div class="sb-content">
-                    <img class="sb-content-img" src="{{asset('assets/client/wp-content/uploads/2022/09/bg_menu.png')}}"
-                         width="272" height="119" alt="" decoding="async" loading="lazy"/>
-                </div>
-            </div>
         </div>
     </section>
     <section class="page-wrapper">
@@ -58,7 +52,7 @@
                                                 <a class="name-posts"  href="{{route('menu.detail', $menu->id)}}">{{$menu->name}}</a>
                                                 <div class="dsprice">
                                                     <div class="pname">Giá:</div>
-                                                    <div class="pnews">{{$menu->old_price}}đ</div><div class="polds">{{$menu->price}}đ</div>
+                                                    <div class="pnews">{{$menu->price}}.000đ</div>
                                                 </div>
                                                 <div class="dsview">
                                                     <div class="viewfood">

@@ -64,39 +64,6 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-menu">
-                <ul id="menu-menu-chinh-1" class="">
-                    <li
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
-                        <a href="{{route('home')}}">Trang chủ</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
-                        <a href="{{route('about.us')}}/">Về chúng tôi</a>
-                    </li>
-                    <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839 dropdown">
-                        <a href="#">
-                            Menu <i class="caret"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                <a href="{{route('menu.index')}}">Menu</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
-                        <a href="{{route('news.index')}}">News &amp;Events</a>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">
-                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>
-                    </li>
-                    <li
-                            class="menu-item menu-item-type-taxonomy menu-item-object-type_schools menu-item-496">
-                        <a href="{{route('branch.index')}}">Chi nhánh</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </footer>

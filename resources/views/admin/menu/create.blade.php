@@ -22,13 +22,9 @@
                         <label for="name">Menu Name</label>
                         <input type="text" class="form-control" name="name" id="name" required>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-6">
                         <label for="price">Price</label>
                         <input type="number" min="1" class="form-control" name="price" id="price" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="old_price">Old Price</label>
-                        <input type="number" min="1" class="form-control" name="old_price" id="old_price" required>
                     </div>
                 </div>
                 <div class="form-group">
