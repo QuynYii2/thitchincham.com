@@ -569,12 +569,13 @@
     <!--======================================
     Top Scroller
     ========================================-->
-    <a href="#" class="top-scroll">
-        <img src="{{asset('assets/client/wp-content/uploads/2022/09/top.png')}}" width="93" height="105" alt=""
-             decoding="async"
-             loading="lazy"/>
-    </a>
-    <div class="social-ring">
+{{--    <a href="#" class="top-scroll">--}}
+{{--        <img src="{{asset('assets/client/wp-content/uploads/2022/09/top.png')}}" width="93" height="105" alt=""--}}
+{{--             decoding="async"--}}
+{{--             loading="lazy"/>--}}
+{{--    </a>--}}
+
+    <div class="social-ring mt-5">
         <div class="social-ring-main">
             <div class="social-ring-content">
                 <a href="tel:{{$config->hotline}}" class="call-icon" rel="nofollow" target="_blank">
@@ -584,6 +585,11 @@
                 </a>
                 <a href="{{$config->facebook}}" class="mes" target="_blank">
                     <img src="{{asset('assets/client/wp-content/uploads/2022/09/facebook.png')}}" width="132"
+                         height="136" alt=""
+                         decoding="async" loading="lazy"/>
+                </a>
+                <a href="{{$config->zalo}}" class="mes" target="_blank">
+                    <img src="{{asset('upload/images/zalo.png')}}" width="132"
                          height="136" alt=""
                          decoding="async" loading="lazy"/>
                 </a>

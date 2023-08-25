@@ -16,12 +16,6 @@
                  {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 1536w,
                  {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 2048w"
                  sizes="(max-width: 2560px) 100vw, 2560px"/>
-            <div class="containter">
-                <div class="sb-content">
-                    <img class="sb-content-img" src="{{asset('assets/client/wp-content/uploads/2022/09/bg_menu.png')}}"
-                         width="272" height="119" alt="" decoding="async" loading="lazy"/>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -43,7 +37,7 @@
                                     <input type="text" style="display: none" value="{{$menu->price}}" name="price">
                                     <div class="diprice">
                                         <div class="pname">Giá bán:</div>
-                                        <div class="pnews">{{$menu->old_price}}đ</div><div class="polds">{{$menu->price}}đ</div>
+                                        <div class="pnews">{{$menu->price}}.000đ</div>
                                     </div>
                                     <div class="entry-content">
                                         {!!$menu->short_description!!}
@@ -71,24 +65,6 @@
                                             ngay
                                         </a>
                                     @endif
-                                    <div class="buy-app">Quý khách vui lòng đặt hàng tại các ứng dụng sau:</div>
-                                    <div class="app-food">
-                                        <a href="https://food.grab.com/vn/vi/">
-                                            <img src=" {{asset('assets/client/wp-content/uploads/2022/10/ud1.png')}}" alt="">
-                                        </a>
-                                        <a href="https://shopee.vn/m/dat-do-an-online-shopeefood">
-                                            <img src=" {{asset('assets/client/wp-content/uploads/2022/10/ud2.png')}}" alt="">
-                                        </a>
-                                        <a href="https://baemin.vn/">
-                                            <img src=" {{asset('assets/client/wp-content/uploads/2022/10/ud3.png')}}" alt="">
-                                        </a>
-                                        <a href="https://www.gojek.com/vn/gofood/">
-                                            <img src=" {{asset('assets/client/wp-content/uploads/2022/10/ud4.png')}}" alt="">
-                                        </a>
-                                        <a href="https://food.be.com.vn/">
-                                            <img src=" {{asset('assets/client/wp-content/uploads/2022/10/ud5.png')}}" alt="">
-                                        </a>
-                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -122,7 +98,7 @@
                                                     <a class="name-posts"  href="{{route('menu.detail', $moreMenusItem->id)}}">{{$moreMenusItem->name}}</a>
                                                     <div class="dsprice">
                                                         <div class="pname">Giá:</div>
-                                                        <div class="pnews">{{$moreMenusItem->old_price}}đ</div><div class="polds">{{$moreMenusItem->price}}đ</div>
+                                                        <div class="pnews">{{$moreMenusItem->price}}.000đ</div>
                                                     </div>
                                                     <div class="dsview">
                                                         <div class="viewfood">

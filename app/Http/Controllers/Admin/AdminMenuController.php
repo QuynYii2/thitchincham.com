@@ -48,7 +48,6 @@ class AdminMenuController extends Controller
                 'name' => $name,
                 'thumbnail' => $imageURL,
                 'price' => $request->input('price'),
-                'old_price' => $request->input('old_price'),
                 'category_id' => $request->input('category_id'),
                 'description' => $request->input('description'),
                 'short_description' => $request->input('short_description'),
@@ -125,7 +124,6 @@ class AdminMenuController extends Controller
             $menu->name =$name;
             $menu->thumbnail =$imageURL;
             $menu->price =$request->input('price');
-            $menu->old_price =$request->input('old_price');
             $menu->category_id =$request->input('category_id');
             $menu->description =$request->input('description');
             $menu->short_description =$request->input('short_description');

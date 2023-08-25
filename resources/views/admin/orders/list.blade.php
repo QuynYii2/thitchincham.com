@@ -62,9 +62,9 @@
                                 $menu = \App\Models\Menu::find($orderItem->menu_id)
                             @endphp
                             <td>{{$menu->name}}</td>
-                            <td>{{$orderItem->price}}</td>
+                            <td>{{$orderItem->price}}.000đ</td>
                             <td>{{$orderItem->quantity}}</td>
-                            <td>{{$order->total}}</td>
+                            <td>{{$order->total}}.000đ</td>
                             <td>{{$order->created_at}}</td>
                             <td id="orderStatus{{$order->id}}">{{$order->status}}</td>
                             <td>

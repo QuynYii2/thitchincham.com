@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label for="title">Price</label>
-                        <input type="text" class="form-control" name="title"  value="{{$orderItem->price}}"
+                        <input type="text" class="form-control" name="title"  value="{{$orderItem->price}}.000đ"
                                disabled>
                     </div>
                     <div class="form-group col-md-2">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label for="title">Total</label>
-                        <input type="text" class="form-control" name="title"  value="{{$order->total}}"
+                        <input type="text" class="form-control" name="title"  value="{{$order->total}}.000đ"
                                disabled>
                     </div>
                 </div>
