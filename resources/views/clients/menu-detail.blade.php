@@ -137,11 +137,11 @@
                                    placeholder="Nguyen Minh">
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group">
                                 <label for="inputEmail">Email</label>
                                 <input type="email" class="form-control" name="email" id="inputEmail">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group">
                                 <label for="inputPassword">Phone Number</label>
                                 <input type="text" class="form-control" name="phoneNumber" id="inputPassword">
                             </div>

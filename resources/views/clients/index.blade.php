@@ -137,10 +137,10 @@
                                                  sizes="(max-width: 768px) 100vw, 768px"/>
                                         </a>
                                         <p>{{$menuItem->name}}</p>
-                                        <div class="info-posts">
+                                        <div class="">
                                             <div class="dsprice" style="color: white">
                                                 <div class="pname" style="color: white">Giá:</div>
-                                                <div class="pnews" style="color: white">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
+                                                <div class="pnews" style="color: white">{{$menuItem->price}}.000đ</div>
                                             </div>
                                             <div class="dsview">
                                                 <div class="viewfood" style="color: white">
@@ -193,7 +193,7 @@
                                              sizes="(max-width: 768px) 100vw, 768px"/>
                                     </a>
                                     <p style="color: black">{{$category->name}}</p>
-                                    <div class="info-posts">
+                                    <div class="">
                                         <div class="dsview">
                                             <div class="viewfood" style="color: black">
                                                 <a href="{{route('menu.detail', $category->id)}}">XEM CHI TIẾT</a>
@@ -242,10 +242,10 @@
                                                      sizes="(max-width: 768px) 100vw, 768px"/>
                                             </a>
                                             <p>{{$menuItem->name}}</p>
-                                            <div class="info-posts">
+                                            <div class="">
                                                 <div class="dsprice" style="color: white">
                                                     <div class="pname" style="color: white">Giá:</div>
-                                                    <div class="pnews" style="color: white">{{$menuItem->old_price}}đ</div><div class="polds">{{$menuItem->price}}đ</div>
+                                                    <div class="pnews" style="color: white">{{$menuItem->price}}.000đ</div>
                                                 </div>
                                                 <div class="dsview">
                                                     <div class="viewfood" style="color: white">
@@ -306,7 +306,7 @@
                                 <div class="info-news">
                                     <a class="name-news"
                                        href="{{route('news.detail', $newsItem->id)}}">{{$newsItem->title}}</a>
-                                    <p class="excerpt-news">{!! $newsItem->short_content !!}</p>
+                                    <p class="excerpt-news">{{$newsItem->short_content}}</p>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                                                 <div class="info-news">
                                                     <a class="name-news"
                                                        href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
-                                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
+                                                    <p class="excerpt-news">{{$newsItem->short_content}}</p>
                                                 </div>
                                             </div>
                                         </div>

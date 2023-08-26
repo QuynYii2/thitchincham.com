@@ -450,7 +450,6 @@ span.wpcf7-not-valid-tip {
 
 .form-group .form-control {
     height: 44px;
-    padding-left: 50px;
     margin-bottom: 12px;
 }
 
@@ -845,26 +844,6 @@ span.wpcf7-not-valid-tip {
     -webkit-animation: headerAnimation 0.7s 1;
     -o-animation: headerAnimation 0.7s 1;
     animation: headerAnimation 0.7s 1;
-}
-
-@-webkit-keyframes "headerAnimation" {
-    0% {
-        margin-top: -70px;
-    }
-
-    100% {
-        margin-top: 0;
-    }
-}
-
-@keyframes "headerAnimation" {
-    0% {
-        margin-top: -70px;
-    }
-
-    100% {
-        margin-top: 0;
-    }
 }
 
 .social-ring a span:before {

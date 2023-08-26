@@ -29,10 +29,6 @@
         <div class="background-overlay">
             <div class="container">
                 @if($news)
-                    <img class="image-intro" style="margin:auto;margin-bottom:15px;"
-                         src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}" width="156" height="111"
-                         alt="" decoding="async"
-                         loading="lazy"/>
                     <h2 class="title-single">{{$news->title}}</h2>
                     <div class="entry-content">
                         {!! $news->short_content !!}
