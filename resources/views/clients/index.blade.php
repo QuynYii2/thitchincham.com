@@ -50,20 +50,6 @@
                 </div>
             </div>
         </div>
-        <div class="containter">
-            <div class="sb-content">
-{{--                <img class="sb-content-img"--}}
-{{--                     src="{{asset('assets/client/wp-content/uploads/2022/09/image_slider.png')}}"--}}
-{{--                     width="810" height="329" alt="" decoding="async" loading="lazy"/>--}}
-{{--                <p class="sb-content-p">Toạ Độ Ăn Chơi Bậc Nhất Hà Thành </p>--}}
-                <p class="sp-content-button">
-                    @if($config)
-                        <a class="sp-button-xt" href="{{$config->facebook}}">Xem thêm</a>
-                        <a class="sp-button-gn" href="tel:{{$config->hotline}}">Gọi ngay</a>
-                    @endif
-                </p>
-            </div>
-        </div>
     </section>
     <section id="section-introduce" class="sec-full">
         <img class="sec-img-full"
@@ -306,7 +292,7 @@
                                 <div class="info-news">
                                     <a class="name-news"
                                        href="{{route('news.detail', $newsItem->id)}}">{{$newsItem->title}}</a>
-                                    <p class="excerpt-news">{{$newsItem->short_content}}</p>
+                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +319,7 @@
                                                 <div class="info-news">
                                                     <a class="name-news"
                                                        href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
-                                                    <p class="excerpt-news">{{$newsItem->short_content}}</p>
+                                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
                                                 </div>
                                             </div>
                                         </div>

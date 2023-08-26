@@ -1117,7 +1117,7 @@ span.wpcf7-not-valid-tip {
 
 .footer-sidebar .background-overlay {
     bottom: 0;
-    height: 100%;
+    height: auto;
     z-index: 3;
     position: relative;
     background: transparent;
