@@ -7,11 +7,6 @@
         <div class="container">
             <div class="footer-top">
                 @if($config)
-                    <a class="logo-top-footer">
-                        <img src="{{$config->logo}}" width="156"
-                             height="111" alt=""
-                             decoding="async" loading="lazy"/>
-                    </a>
                     <p class="hotline-footer">
                         <a class="hf-phone" href="tel:{{$config->hotline}}">Hotline: {{$config->hotline}} </a>
                         <a class="hf-phone" href="tel:{{$config->cskh}}">CSKH: {{$config->cskh}}</a>
