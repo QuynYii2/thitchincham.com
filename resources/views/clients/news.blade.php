@@ -31,10 +31,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img class="image-intro" style="margin:auto;margin-bottom:15px;"
-                             src="{{asset('assets/client/wp-content/uploads/2022/09/logo.png')}}" width="156"
-                             height="111" alt=""
-                             decoding="async" loading="lazy"/>
                         <h2 class="page-title">
                             <span>News &amp;Events</span>
                         </h2>
