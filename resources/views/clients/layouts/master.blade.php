@@ -588,7 +588,7 @@
                          height="136" alt=""
                          decoding="async" loading="lazy"/>
                 </a>
-                <a href="{{$config->zalo}}" class="mes" target="_blank">
+                <a href="{{$config->zalo}}" style="padding: 13px" class="mes" target="_blank">
                     <img src="{{asset('upload/images/zalo.png')}}" width="132"
                          height="136" alt=""
                          decoding="async" loading="lazy"/>

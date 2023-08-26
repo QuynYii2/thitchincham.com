@@ -20,32 +20,32 @@
             <div id="banner-carousel" class="owl-carousel owl-theme">
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/HIU_8816.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong-Nhat-Nhat-o-My-Dinh.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
                 <div class="item-banner">
                     <img width="2560" height="1707"
-                         src="{{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}}"
+                         src="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}}"
                          class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 2560w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 768w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 1536w,
-                                 {{asset('assets/client/wp-content/uploads/2022/12/quan-nuong-ngon-o-sai-gon-7.jpg')}} 2048w"
+                         srcset="{{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2560w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 768w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 1536w,
+                                 {{asset('assets/client/wp-content/uploads/2022/12/Screenshot 2023-08-26 092733.png')}} 2048w"
                          sizes="(max-width: 2560px) 100vw, 2560px"/>
                 </div>
             </div>
@@ -76,9 +76,6 @@
                     <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
                         @if($news)
                             <div class="info-introduce">
-                                <img width="156" height="111"
-                                     src="{{$config->logo}}"
-                                     class="image-intro" alt="" decoding="async" loading="lazy"/>
                                 <h2 class="title-section">{{$news->title}}</h2>
                                 <div class="excerpt-introduce truncate-text">
                                     {!! $news->short_content !!}
@@ -122,9 +119,6 @@
              alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <img width="156" height="111"
-                     src="{{$config->logo}}"
-                     class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">MÓN ĂN ĐƯỢC ĐẶT NHIỀU </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
@@ -181,9 +175,6 @@
              height="1105" alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <img width="156" height="111"
-                     src="{{$config->logo}}"
-                     class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">DAMH MỤC SẢN PHẨM </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
@@ -231,9 +222,6 @@
              height="1100" alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <img width="156" height="111"
-                     src="{{$config->logo}}"
-                     class="image-specail" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">CÁC MÓN MỚI NHẤT</h3>
                 <div class="wrap-menu">
                     <div class="slider_sec_8 swiper">
@@ -292,9 +280,6 @@
              height="1150" alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <img class="image-specail" src="{{$config->logo}}"
-                     width="156"
-                     height="111" alt="" decoding="async" loading="lazy"/>
                 <h3 class="specail-title">TIN TỨC
                 </h3>
 
@@ -373,9 +358,6 @@
             <div class="container">
                 <div class="row content-app">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-app">
-                        <img class="image-specail"
-                             src="{{$config->logo}}"
-                             width="156" height="111" alt="" decoding="async" loading="lazy"/>
                         <h3 class="specail-title">Kết nối zalo ngay
                         </h3>
                         <p class="btn-app">
