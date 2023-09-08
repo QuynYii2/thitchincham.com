@@ -6,15 +6,15 @@
     <section id="section-banner" class="section-bread">
         <div class="background-overlay">
             <img width="2560" height="1707"
-                 src="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}}"
+                 src="{{asset('assets/img/mon-ga.jpg')}}"
                  class="image-banner-full" alt="" decoding="async" loading="lazy"
-                 srcset="{{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 2560w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 360w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 750w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 120w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 768w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 1536w,
-                 {{asset('assets/client/wp-content/uploads/2022/12/Quan-lau-nuong.jpg')}} 2048w"
+                 srcset="{{asset('assets/img/mon-ga.jpg')}} 2560w,
+                 {{asset('assets/img/mon-ga.jpg')}} 360w,
+                 {{asset('assets/img/mon-ga.jpg')}} 750w,
+                 {{asset('assets/img/mon-ga.jpg')}} 120w,
+                 {{asset('assets/img/mon-ga.jpg')}} 768w,
+                 {{asset('assets/img/mon-ga.jpg')}} 1536w,
+                 {{asset('assets/img/mon-ga.jpg')}} 2048w"
                  sizes="(max-width: 2560px) 100vw, 2560px"/>
         </div>
     </section>

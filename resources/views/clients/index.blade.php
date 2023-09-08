@@ -292,7 +292,7 @@
                                 <div class="info-news">
                                     <a class="name-news"
                                        href="{{route('news.detail', $newsItem->id)}}">{{$newsItem->title}}</a>
-                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
+{{--                                    <p class="excerpt-news">{!! $news->short_content !!}</p>--}}
                                 </div>
                             </div>
                         </div>
@@ -319,7 +319,7 @@
                                                 <div class="info-news">
                                                     <a class="name-news"
                                                        href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
-                                                    <p class="excerpt-news">{!! $news->short_content !!}</p>
+{{--                                                    <p class="excerpt-news">{!! $news->short_content !!}</p>--}}
                                                 </div>
                                             </div>
                                         </div>

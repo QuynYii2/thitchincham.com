@@ -6,15 +6,15 @@
     <section id="section-banner" class="section-bread">
         <div class="background-overlay">
             <img width="2560" height="1707"
-                 src="{{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}}"
+                 src="{{asset('assets/img/mon-an-nhanh.jpg')}}"
                  class="image-banner-full" alt="" decoding="async" loading="lazy"
-                 srcset="{{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 2560w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 360w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 750w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 120w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 768w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 1536w,
-                 {{asset('assets/client/wp-content/uploads/2022/10/Quan-nuong-gan-day-12-1440x600.jpg')}} 2048w"
+                 srcset="{{asset('assets/img/mon-an-nhanh.jpg')}} 2560w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 360w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 750w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 120w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 768w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 1536w,
+                 {{asset('assets/img/mon-an-nhanh.jpg')}} 2048w"
                  sizes="(max-width: 2560px) 100vw, 2560px"/>
         </div>
     </section>
