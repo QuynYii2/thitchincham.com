@@ -39,7 +39,6 @@ body {
 
 @font-face {
     font-family: Nunito Bold;
-    src: url("fonts/Nunito-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -251,7 +250,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 #navbar_primary {
-    background: #267f23;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
 }
 
@@ -347,13 +346,13 @@ div.wpcf7-mail-sent-ok {
     padding: 15px;
 }
 .dsprice {
+    justify-content: center;
     display: flex;
     align-items: flex-end;
     align-content: flex-end;
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 27px;
-    margin-top: 10px;
 }
 .dsprice .pname {
     margin-right: 5px;
@@ -424,8 +423,10 @@ div.wpcf7-mail-sent-ok {
     .item-banner {
         position: relative;
         width: 100%;
-        height: 345px;
+        height: auto;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -434,6 +435,39 @@ div.wpcf7-mail-sent-ok {
 -----------------------------------------*/
 
 @media (max-width: 768px) {
+    .viewfood a {
+        font-size: 11px;
+        line-height: 20px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .dsprice .pname {
+        margin-right: 5px;
+        font-size: 14px;
+        line-height: 27px;
+        color: black!important;
+    }
+    .dsprice .pnews {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: bold;
+        color: black!important;
+        margin-right: 5px;
+    }
+
+    .product-name{
+        font-size: 28px;
+        line-height: 27px;
+        font-weight: bold;
+        color: black!important;
+        margin-top: 15px;
+    }
+    .dsprice .polds {
+        color: black!important;
+        font-size: 18px;
+        line-height: 27px;
+    }
     .title-section {
         font-size: 20px;
         margin-bottom: 20px;
@@ -553,10 +587,6 @@ header {
 }
 
 nav.navbar {
-    background: none;
-}
-
-div#navbar_primary {
     background: none;
 }
 
@@ -714,6 +744,7 @@ section#section-banner {
 .slider_sec_8.swiper {
     overflow: inherit;
     padding: 60px 0;
+    height: 80%;
 }
 
 .tab-wrapper-outside {
@@ -863,7 +894,6 @@ section#section-banner {
 }
 
 .swiper-button-next {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_next.png);
     width: 47px;
     height: 47px;
     position: absolute;
@@ -873,7 +903,6 @@ section#section-banner {
 }
 
 .swiper-button-prev {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_back.png);
     width: 47px;
     height: 47px;
     position: absolute;
@@ -1173,8 +1202,6 @@ section#section-banner {
 }
 
 .swiper-button-next {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_next.png);
-    ;
     width: 47px;
     height: 47px;
     position: absolute;
@@ -1184,8 +1211,6 @@ section#section-banner {
 }
 
 .swiper-button-prev {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_back.png);
-    ;
     width: 47px;
     height: 47px;
     position: absolute;
@@ -1334,7 +1359,6 @@ h3.specail-title {
 }
 
 .wrap-menu {
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_khung.png);
     background-size: 100%;
     padding: 45px 0px;
 }
@@ -1357,10 +1381,18 @@ h3.specail-title {
 
 p.excerpt-news {
     font-size: 16px;
-    margin-top: 15px;
+    /*margin-top: 7px;*/
     text-overflow: ellipsis;
     width: 100%;
-    height: 50px;
+    height: 45px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.detail-content{
+    height: 45px;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -1414,7 +1446,6 @@ a.btn-app-store {
     margin-top: 20px;
 }
 
-#section-app .container {}
 
 a.logo-top-footer {
     margin: auto;
@@ -1429,103 +1460,15 @@ a.logo-top-footer img {
 }
 
 p.hotline-footer a {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_qn3.png);
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     width: 359px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     height: 50px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     text-align: center;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     display: inline-block;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     line-height: 50px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     color: #ffffff;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     font-size: 18px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     font-family: 'Lalezar';
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     margin: 0px 15px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
 }
 
 p.hotline-footer {
@@ -1539,88 +1482,15 @@ p.hotline-footer {
 }
 
 p.notice-cn {
-    background: url(/quan_nho/wp-content/uploads/2022/09/btn_qn4.png) no-repeat;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     width: 269px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     height: 54px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     color: #ffffff;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     font-size: 18px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     text-align: center;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     line-height: 54px;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     font-weight: bold;
-    ;
-    ;
-    ;
-    ;
     margin: auto;
-    ;
-    ;
-    ;
-    ;
-    ;
-    ;
     margin-bottom: 30px;
-    ;
-    ;
-    ;
-    ;
 }
 
 h3.cn-h3 {
@@ -1674,7 +1544,6 @@ section.footer-copyright {
 }
 
 .page-wrapper {
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg11.jpg) repeat;
 }
 .post-time {
     font-size: 13px;
@@ -1933,6 +1802,7 @@ a.top-scroll {
 
 #section-km .slider_sec_8 {
     padding-bottom: 5px;
+    height: 70%;
 }
 
 
@@ -1968,7 +1838,6 @@ a.top-scroll {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(/quan_nho/wp-content/uploads/2022/09/denlong.png) center center no-repeat;
     top: 0px;
     left: 0px;
     background-size: 110px;
@@ -1989,8 +1858,6 @@ span.page-numbers.current {
 }
 
 section#blog-schools {
-    background: url(/quan_nho/wp-content/uploads/2022/09/bg_14.jpg) repeat;
-    ;
 }
 
 #blog-schools p.hotline-footer {
@@ -2142,7 +2009,7 @@ span.page-numbers.current {
 
     section#section-banner {
         position: relative;
-        height: 400px;
+        height: auto;
     }
 
     p.sb-content-p {
@@ -2165,15 +2032,12 @@ span.page-numbers.current {
 
     #section-specail .slider_sec_8 {
         padding: 20px 0px 0px;
+        height: 55%;
     }
 
     h3.specail-title {
         color: #333333;
         font-size: 25px;
-    }
-
-    .home section:nth-child(2n + 1) {
-        padding: 30px 0px;
     }
 
 
@@ -2185,11 +2049,6 @@ span.page-numbers.current {
     .sec-full .container {
         margin-top: 0px;
     }
-
-    .home .site-content section {
-        padding: 30px 0px;
-    }
-
     img.image-intro {
         margin: auto;
         margin-bottom: 15px;
@@ -2228,7 +2087,7 @@ span.page-numbers.current {
 
     .slider_sec_8 .item_slider_slick p {
         font-size: 11px;
-        line-height: 14px;
+        line-height: 0;
     }
 
     a.top-scroll {
@@ -2257,10 +2116,6 @@ span.page-numbers.current {
         display: none;
     }
 
-    .is-sticky .sticky-nav {
-        background: #ffffff;
-    }
-
     .section-bread .image-banner-full {
         width: auto !important;
         max-width: none;
@@ -2269,16 +2124,8 @@ span.page-numbers.current {
         min-width: 100%;
     }
 
-    #section-menu {
-        padding: 30px 0px;
-    }
-
     section#section-banner.section-bread {
         height: auto;
-    }
-
-    section#section-km {
-        padding: 30px 0px;
     }
 
     .section-bread .sb-content {
@@ -2336,10 +2183,6 @@ span.page-numbers.current {
         background-size: 100%;
     }
 
-    section#section-introduce {
-        padding-bottom: 60px;
-    }
-
     section#section-introduce:before {
         content: "";
         position: absolute;
@@ -2351,7 +2194,7 @@ span.page-numbers.current {
     }
 
     section#section-specail {
-        padding-bottom: 60px;
+        padding-bottom: 0;
         color: #ffffff
     }
 
@@ -2375,7 +2218,6 @@ span.page-numbers.current {
     }
 
     section#section-menu {
-        padding-bottom: 60px;
         color: #ffffff
     }
 
@@ -2390,10 +2232,7 @@ span.page-numbers.current {
     }
 
 
-    section#section-menu {}
-
     section#section-km {
-        padding-bottom: 60px;
         color: #ffffff
     }
 
@@ -2563,6 +2402,14 @@ span.page-numbers.current {
         top: 0px;
     }
 
+    .swiper {
+        margin-top: 20px;
+        height: 60%;
+    }
+    h3.specail-title{
+        color: black;
+        font-size: 20px;
+    }
     .colums-posts .img-posts img {
         height: auto;
     }
@@ -2580,13 +2427,16 @@ span.page-numbers.current {
     }
 
     #showmenu {
-        top: 15px;
+        top: 7px;
     }
 
     .sidebar {
         display: none;
     }
 
+    .slider_sec_8 .item_slider_slick p {
+        color: black!important;
+    }
 }
 
 @media (min-width:1000px) and (max-width:1390px) {
@@ -2735,6 +2585,6 @@ span.page-numbers.current {
 
     #section-specail .slider_sec_8 .item_slider_slick p {
         position: relative;
-        top: -20px;
     }
+
 }
