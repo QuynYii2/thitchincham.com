@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <label for="short_content">Short Content</label>
-                    <textarea type="text" class="form-control description" name="short_content"
+                    <textarea type="text" class="form-control " name="short_content"
                               id="short_content"
                               placeholder="Enter short description" required></textarea>
                 </div>

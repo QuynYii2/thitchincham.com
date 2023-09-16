@@ -105,17 +105,13 @@
     display: block;
     margin: 0;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 20px;
     border-bottom: solid 0px #ddd;
     border-top: solid 1px #333;
     -webkit-transition: all 0.35s linear;
     -moz-transition: all 0.35s linear;
     -o-transition: all 0.35s linear;
     transition: all 0.35s linear;
-}
-
-#mobilenav ul.mobile-menu>li>a {
-    background: #e1203b;
 }
 
 #mobilenav .arrow {
@@ -146,7 +142,7 @@
 }
 
 #mobilenav ul ul.sub-menu {
-    background: #a80023;
+    background: #383838;
 }
 
 #mobilenav ul>li.menu-item-has-children.open>.arrow:before {
@@ -217,7 +213,7 @@
     width: 30px;
     height: 24px;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .hamburger-inner {

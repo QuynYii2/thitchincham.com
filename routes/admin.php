@@ -62,7 +62,7 @@ Route::group(['prefix' => 'orders'], function () {
 });
 
 // Config
-Route::group(['prefix' => 'configs'], function () {
+Route::group(['prefix' => 'configs'], function  () {
     Route::get('list', [AdminConfigController::class, 'index'])->name('admin.show.all.configs');
     Route::get('detail/{id}', [AdminConfigController::class, 'detail'])->name('admin.show.detail.config');
     Route::put('update/{id}', [AdminConfigController::class, 'update'])->name('admin.update.config');
