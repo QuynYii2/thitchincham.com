@@ -23,9 +23,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2 class="page-title">
+                        <h3 class="page-title">
                             <span>Danh sách sản phẩm</span>
-                        </h2>
+                        </h3>
                         <div class="row">
                             @if(!$menus->isEmpty())
                                 @foreach($menus as $menu)
@@ -44,7 +44,7 @@
                                                          sizes="(max-width: 768px) 100vw, 768px"/>
                                                 </a>
                                             </div>
-                                            <div class="info-posts">
+                                            <div class="info-posts text-center">
                                                 <a class="name-posts"  href="{{route('menu.detail', $menu->id)}}">{{$menu->name}}</a>
                                                 <div class="dsprice">
                                                     <div class="pname">Giá:</div>

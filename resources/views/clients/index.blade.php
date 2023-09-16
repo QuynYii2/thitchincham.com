@@ -68,12 +68,12 @@
                                 </div>
                                 <div class="box-image_introduce show_mobile">
                                     <img width="613" height="405"
-                                         src="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}}"
+                                         src="{{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}}"
                                          class="attachment-medium_large size-medium_large" alt="" decoding="async"
                                          loading="lazy"
-                                         srcset="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 613w,
-                                             {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 360w,
-                                             {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 120w"
+                                         srcset="{{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 613w,
+                                             {{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 360w,
+                                             {{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 120w"
                                          sizes="(max-width: 613px) 100vw, 613px"/>
                                 </div>
                                 <div class="readmore-section">
@@ -85,12 +85,12 @@
                     <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 show_pc" data-wow-delay="0.5s">
                         <div class="box-image_introduce">
                             <img width="613" height="405"
-                                 src="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}}"
+                                 src="{{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}}"
                                  class="attachment-medium_large size-medium_large" alt="" decoding="async"
                                  loading="lazy"
-                                 srcset="{{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 613w,
-                                         {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 360w,
-                                         {{asset('assets/client/wp-content/uploads/2022/09/sot-nuong-bbq-1(3).jpg')}} 120w"
+                                 srcset="{{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 613w,
+                                         {{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 360w,
+                                         {{asset('assets/client/wp-content/uploads/2022/09/anhbia.jpg')}} 120w"
                                  sizes="(max-width: 613px) 100vw, 613px"/>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
              height="1105" alt="" decoding="async" loading="lazy"/>
         <div class="background-overlay">
             <div class="container">
-                <h3 class="specail-title">DAMH MỤC SẢN PHẨM </h3>
+                <h3 class="specail-title">DANH MỤC SẢN PHẨM </h3>
                 <div class="slider_sec_8 swiper">
                     <div class="swiper-wrapper">
                         @if(!$categories->isEmpty())
@@ -274,7 +274,6 @@
                         @php
                             $newsItem = $listNews[0];
                         @endphp
-
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-bignews">
                             <div class="box-news">
                                 <div class="img-news">
@@ -292,39 +291,66 @@
                                 <div class="info-news">
                                     <a class="name-news"
                                        href="{{route('news.detail', $newsItem->id)}}">{{$newsItem->title}}</a>
-                                    <p class="excerpt-news">{!! $newsItem->short_content !!}</p>
+                                    <div class="excerpt-news-long">{!! $newsItem->short_content !!}</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 colums-smallnews">
                             <div class="row">
-
-                                @foreach($listNews as $news)
-                                    @if($newsItem->id != $news->id)
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
-                                            <div class="box-news">
-                                                <div class="img-news">
-                                                    <a href="{{route('news.detail', $news->id)}}">
-                                                        <img width="768" height="512"
-                                                             src="{{ $news->thumbnail }}"
-                                                             class="attachment-medium_large size-medium_large wp-post-image"
-                                                             alt="{{ $news->title }}"
-                                                             decoding="async" loading="lazy"
-                                                             srcset="{{ $news->thumbnail }} 768w,
-                                                             {{ $news->thumbnail }} 1500w"
-                                                             sizes="(max-width: 768px) 100vw, 768px"/>
-                                                    </a>
-                                                </div>
-                                                <div class="info-news">
-                                                    <a class="name-news"
-                                                       href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
-                                                    <p class="excerpt-news">{!! $newsItem->short_content !!}</p>
+                                @if(count($listNews) > 5)
+                                    @for($i = 0; $i < 5; $i++)
+                                        @if($newsItem->id != $listNews[$i]->id)
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
+                                                <div class="box-news">
+                                                    <div class="img-news">
+                                                        <a href="{{route('news.detail', $listNews[$i]->id)}}">
+                                                            <img width="768" height="512"
+                                                                 src="{{ $listNews[$i]->thumbnail }}"
+                                                                 class="attachment-medium_large size-medium_large wp-post-image"
+                                                                 alt="{{ $listNews[$i]->title }}"
+                                                                 decoding="async" loading="lazy"
+                                                                 srcset="{{ $listNews[$i]->thumbnail }} 768w,
+                                                             {{ $listNews[$i]->thumbnail }} 1500w"
+                                                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info-news">
+                                                        <a class="name-news"
+                                                           href="{{route('news.detail', $listNews[$i]->id)}}">{{$listNews[$i]->title}}</a>
+                                                        <div class="excerpt-news">{!! $listNews[$i]->short_content !!}</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    @endif
-                                @endforeach
+                                        @endif
+                                    @endfor
+                                @else
+                                    @foreach($listNews as $news)
+                                        @if($newsItem->id != $news->id)
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sub-smallnews">
+                                                <div class="box-news">
+                                                    <div class="img-news">
+                                                        <a href="{{route('news.detail', $news->id)}}">
+                                                            <img width="768" height="512"
+                                                                 src="{{ $news->thumbnail }}"
+                                                                 class="attachment-medium_large size-medium_large wp-post-image"
+                                                                 alt="{{ $news->title }}"
+                                                                 decoding="async" loading="lazy"
+                                                                 srcset="{{ $news->thumbnail }} 768w,
+                                                             {{ $news->thumbnail }} 1500w"
+                                                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info-news">
+                                                        <a class="name-news"
+                                                           href="{{route('news.detail', $news->id)}}">{{$news->title}}</a>
+                                                        <div class="excerpt-news">{!! $news->short_content !!}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                @endif
                             </div>
                         </div>
 

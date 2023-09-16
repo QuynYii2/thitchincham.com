@@ -38,8 +38,8 @@
                     CHI NHÁNH
                 </h3>
                 <p class="hotline-footer">
-                    <a class="hf-phone" href="tel:1900234538">Hotline: 1900234538 </a>
-                    <a class="hf-phone" href="tel:0961812345">CSKH: 0961812345</a>
+                    <a class="hf-phone" href="tel:039.881.2611">Hotline: 039.881.2611 </a>
+                    <a class="hf-phone" href="tel:039.881.2611">CSKH: 039.881.2611</a>
                 </p>
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">

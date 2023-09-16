@@ -89,13 +89,11 @@
             </div>
             <div class="menu-menu-chinh-container">
                 <ul id="menu-main" class="mobile-menu">
-                    <li
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
-                        <a href="{{route('home')}}" aria-current="page" style="font-size: 24px">Trang chủ</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-499 active">
+                        <a href="{{route('home')}}" aria-current="page">Trang chủ</a>
                     </li>
-                    <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839">
-                        <a href="#" style="font-size: 24px">Danh sách sản phẩm</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-839">
+                        <a href="{{route('menu.index')}}">Danh sách sản phẩm</a>
                         <ul class="sub-menu">
                             @php
                                 $categories = \App\Models\Category::where('status', \App\Enums\CategoryStatus::ACTIVE)->get();
@@ -103,16 +101,16 @@
                             @foreach($categories as $category)
                                 <li id="menu-item-{{$category->id}}"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
-                                    <a style="font-size: 22px" href="{{route('menu.category.list', $category->id)}}">{{$category->name}}</a>
+                                    <a style="font-size: 18px" href="{{route('menu.category.list', $category->id)}}">{{$category->name}}</a>
                                 </li>
                             @endforeach
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453">
-                        <a href="{{route('news.index')}}" style="font-size: 24px">Tin tức</a>
+                        <a href="{{route('news.index')}}">Tin tức</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494">
-                        <a href="{{route('about.us')}}"  style="font-size: 24px">Về chúng tôi</a>
+                        <a href="{{route('about.us')}}" >Về chúng tôi</a>
                     </li>
 {{--                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454">--}}
 {{--                        <a href="{{route('recruitment.index')}}">Tuyển dụng</a>--}}
