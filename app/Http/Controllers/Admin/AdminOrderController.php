@@ -13,7 +13,7 @@ class AdminOrderController extends Controller
 {
     public function index()
     {
-        $orders = Order::where('status', '!=', OrderStatus::DELETED)->get();
+        $orders = Order::where('status', '!=', OrderStatus::DELETED)->orderBy('id', 'desc')->get();
         return view('admin.orders.list', compact('orders'));
     }
 
@@ -37,8 +37,10 @@ class AdminOrderController extends Controller
             }
             $order->status = $request->input('status');
             $order->save();
+            alert()->success('Thành công', 'Lưu đơn hàng thành công');
             return redirect(route('admin.show.all.orders'));
         } catch (\Exception $exception) {
+            alert()->error('Thất bại', 'Không thể sửa đơn hàng');
             return back();
         }
     }
@@ -52,8 +54,10 @@ class AdminOrderController extends Controller
             }
             $order->status = OrderStatus::DELETED;
             $order->save();
+            alert()->success('Thành công', 'Xóa đơn hàng thành công');
             return redirect(route('admin.show.all.orders'));
         } catch (\Exception $exception) {
+            alert()->error('Thất bại', 'Không thể xóa đơn hàng');
             return back();
         }
     }

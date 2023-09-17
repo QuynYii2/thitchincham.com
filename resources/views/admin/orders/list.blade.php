@@ -59,11 +59,20 @@
                             </td>
                             @php
                                 $orderItem = \App\Models\OrderItem::where('order_id', $order->id)->first();
-                                $menu = \App\Models\Menu::find($orderItem->menu_id)
+                                $menu = null;
+                                if ($orderItem){
+                                $menu = \App\Models\Menu::find($orderItem->menu_id);
+                                }
                             @endphp
-                            <td>{{$menu->name}}</td>
-                            <td>{{$orderItem->price}}.000đ</td>
-                            <td>{{$orderItem->quantity}}</td>
+                            @if($menu)
+                                <td>{{$menu->name}}</td>
+                                <td>{{$orderItem->price}}.000đ</td>
+                                <td>{{$orderItem->quantity}}</td>
+                            @else
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                            @endif
                             <td>{{$order->total}}.000đ</td>
                             <td>{{$order->created_at}}</td>
                             <td id="orderStatus{{$order->id}}">{{$order->status}}</td>

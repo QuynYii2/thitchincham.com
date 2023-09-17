@@ -27,6 +27,7 @@
     <link href="{{asset('assets/admin/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/vendor/simple-datatables/style.css')}}" rel="stylesheet">
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/admin/css/style.css')}}" rel="stylesheet">
@@ -36,6 +37,7 @@
 
 @include('admin.layouts.header')
 @include('admin.layouts.side-bar')
+@include('sweetalert::alert')
 
 <main id="main" class="main">
 

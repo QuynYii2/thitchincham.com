@@ -6,7 +6,9 @@ use App\Enums\OrderItemStatus;
 use App\Enums\OrderStatus;
 use App\Models\Order;
 use App\Models\OrderItem;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class OrderController extends Controller
 {
@@ -19,24 +21,49 @@ class OrderController extends Controller
             $menu = $request->input('menu_id');
 
             $total = $quantity * $price;
+
             $order = [
                 'information_id' => $info_id,
                 'total' => $total,
+                'menu_id' => $menu,
                 'status' => OrderStatus::WAIT_PAYMENT,
             ];
 
-            Order::create($order);
-            $oldOrder = Order::where('information_id', $info_id)->orderBy('created_at', 'desc')->first();
-            $order_item = [
+            $oldOrder = Order::where('information_id', $info_id)
+                ->where('status', OrderStatus::WAIT_PAYMENT)
+                ->where('menu_id', $menu)
+                ->latest('created_at')
+                ->first();
+
+            if (!$oldOrder) {
+                $oldOrder = Order::create($order);
+            }
+
+            $orderItem = [
                 'order_id' => $oldOrder->id,
                 'quantity' => $quantity,
                 'menu_id' => $menu,
                 'price' => $price,
                 'status' => OrderItemStatus::ACTIVE,
             ];
-            OrderItem::create($order_item);
+
+            $oldOrderItem = OrderItem::where('order_id', $oldOrder->id)
+                ->where('menu_id', $menu)
+                ->first();
+
+            if (!$oldOrderItem) {
+                OrderItem::create($orderItem);
+            } else {
+                $oldOrderItem->quantity += $quantity;
+                $oldOrder->total += $total;
+                $oldOrder->save();
+                $oldOrderItem->save();
+            }
+            Cookie::queue(Cookie::forget('information_id'));
+            alert()->success('Thành công', 'Đặt đơn hàng thành công');
             return back();
         } catch (\Exception $exception) {
+            alert()->error('Có lỗi xảy ra!', 'Không thể đặt đơn, vui lòng thử lại sau...');
             return back();
         }
     }
