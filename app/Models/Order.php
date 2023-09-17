@@ -12,7 +12,8 @@ class Order extends Model
     protected $fillable = [
         'information_id',
         'total',
-        'status'
+        'status',
+        'menu_id'
     ];
 
     public function information()

@@ -21,99 +21,7 @@
         gtag('config', 'G-F5H0K6KGHL');
     </script>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
-    <!-- This site is optimized with the Yoast SEO plugin v20.12 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>@yield('title')</title>
-    <meta name="description"
-          content="tienteviettrung.com là địa chỉ uy tín giúp bạn kết nối với đối tác ở Trung Quốc hay người thân của mình. Chúng tôi có thể làm được gì? Chúng tôi giúp các bạn chuyển tiền một cách nhanh chóng để công việc kinh doanh của bạn tiếp tục trôi chảy"/>
-    <link rel="canonical" href="https://quannho.vn/"/>
-    <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội"/>
-    <meta property="og:description"
-          content="tienteviettrung.com là địa chỉ uy tín giúp bạn kết nối với đối tác ở Trung Quốc hay người thân của mình. Chúng tôi có thể làm được gì? Chúng tôi giúp các bạn chuyển tiền một cách nhanh chóng để công việc kinh doanh của bạn tiếp tục trôi chảy"/>
-    <meta property="og:url" content="https://quannho.vn/"/>
-    <meta property="og:site_name" content="Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội"/>
-    <meta property="article:modified_time" content="2022-08-23T07:28:13+00:00"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <script type="application/ld+json" class="yoast-schema-graph">
-            {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://quannho.vn/","url":"https://quannho.vn/","name":"Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội","isPartOf":{"@id":"https://quannho.vn/#website"},"datePublished":"2020-09-11T02:30:37+00:00","dateModified":"2022-08-23T07:28:13+00:00","description":"tienteviettrung.com là địa chỉ uy tín giúp bạn kết nối với đối tác ở Trung Quốc hay người thân của mình. Chúng tôi có thể làm được gì? Chúng tôi giúp các bạn chuyển tiền một cách nhanh chóng để công việc kinh doanh của bạn tiếp tục trôi chảy","breadcrumb":{"@id":"https://quannho.vn/#breadcrumb"},"inLanguage":"vi","potentialAction":[{"@type":"ReadAction","target":["https://quannho.vn/"]}]},{"@type":"BreadcrumbList","@id":"https://quannho.vn/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ"}]},{"@type":"WebSite","@id":"https://quannho.vn/#website","url":"https://quannho.vn/","name":"Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội","description":"Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://quannho.vn/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"vi"}]}
-    </script>
-    <!-- / Yoast SEO plugin. -->
-    <link rel='dns-prefetch' href='//translate.google.com'/>
-    <link rel="alternate" type="application/rss+xml"
-          title="Dòng thông tin Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội &raquo;" href="https://quannho.vn/feed/"/>
-    <link rel="alternate" type="application/rss+xml"
-          title="Dòng phản hồi Quán Nhỏ - Quán Nhậu Xuyên Đêm Tại Hà Nội &raquo;"
-          href="https://quannho.vn/comments/feed/"/>
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/quannho.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"
-            }
-        };
-        /*! This file is auto-generated */
-        !function (e, a, t) {
-            var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d");
-
-            function s(e, t) {
-                p.clearRect(0, 0, i.width, i.height),
-                    p.fillText(e, 0, 0);
-                e = i.toDataURL();
-                return p.clearRect(0, 0, i.width, i.height),
-                    p.fillText(t, 0, 0),
-                e === i.toDataURL()
-            }
-
-            function c(e) {
-                var t = a.createElement("script");
-                t.src = e,
-                    t.defer = t.type = "text/javascript",
-                    a.getElementsByTagName("head")[0].appendChild(t)
-            }
-
-            for (o = Array("flag", "emoji"),
-                     t.supports = {
-                         everything: !0,
-                         everythingExceptFlag: !0
-                     },
-                     r = 0; r < o.length; r++)
-                t.supports[o[r]] = function (e) {
-                    if (p && p.fillText)
-                        switch (p.textBaseline = "top",
-                            p.font = "600 32px Arial",
-                            e) {
-                            case "flag":
-                                return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !s("\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                            case "emoji":
-                                return !s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
-                        }
-                    return !1
-                }(o[r]),
-                    t.supports.everything = t.supports.everything && t.supports[o[r]],
-                "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag,
-                t.DOMReady = !1,
-                t.readyCallback = function () {
-                    t.DOMReady = !0
-                }
-                ,
-            t.supports.everything || (n = function () {
-                t.readyCallback()
-            }
-                ,
-                a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1),
-                    e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n),
-                    a.attachEvent("onreadystatechange", function () {
-                        "complete" === a.readyState && t.readyCallback()
-                    })),
-                (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji),
-                    c(e.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -287,16 +195,7 @@
     <script type='text/javascript'
             src='{{asset('assets/client/wp-content/themes/C5group/js/custom.js?dgaw&#038;ver=6.2.2')}}'
             id='specia-custom-js-js'></script>
-    <link rel="https://api.w.org/" href="https://quannho.vn/wp-json/"/>
-    <link rel="alternate" type="application/json" href="https://quannho.vn/wp-json/wp/v2/pages/13"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://quannho.vn/xmlrpc.php?rsd"/>
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://quannho.vn/wp-includes/wlwmanifest.xml"/>
     <meta name="generator" content="WordPress 6.2.2"/>
-    {{--    <link rel='shortlink' href='/quan_nho/'/>--}}
-    <link rel="alternate" type="application/json+oembed"
-          href="https://quannho.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquannho.vn%2F"/>
-    <link rel="alternate" type="text/xml+oembed"
-          href="https://quannho.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquannho.vn%2F&#038;format=xml"/>
     <link rel="stylesheet" href="{{asset('assets/admin/css/fontend.css')}}">
     <meta name="generator" content="Redux 4.4.4"/>
 
@@ -375,59 +274,6 @@
             width: 100%;
         }
     </style>
-    <script data-cfasync="false">
-        var dFlipLocation = "/quan_nho/wp-content/plugins/3d-flipbook-dflip-lite/assets/";
-        var dFlipWPGlobal = {
-            "text": {
-                "toggleSound": "Turn on\/off Sound",
-                "toggleThumbnails": "Toggle Thumbnails",
-                "toggleOutline": "Toggle Outline\/Bookmark",
-                "previousPage": "Previous Page",
-                "nextPage": "Next Page",
-                "toggleFullscreen": "Toggle Fullscreen",
-                "zoomIn": "Zoom In",
-                "zoomOut": "Zoom Out",
-                "toggleHelp": "Toggle Help",
-                "singlePageMode": "Single Page Mode",
-                "doublePageMode": "Double Page Mode",
-                "downloadPDFFile": "Download PDF File",
-                "gotoFirstPage": "Goto First Page",
-                "gotoLastPage": "Goto Last Page",
-                "share": "Share",
-                "mailSubject": "I wanted you to see this FlipBook",
-                "mailBody": "Check out this site ",
-                "loading": "DearFlip: Loading "
-            },
-            "moreControls": "download,pageMode,startPage,endPage,sound",
-            "hideControls": "",
-            "scrollWheel": "true",
-            "backgroundColor": "#777",
-            "backgroundImage": "",
-            "height": "auto",
-            "paddingLeft": "20",
-            "paddingRight": "20",
-            "controlsPosition": "bottom",
-            "duration": 800,
-            "soundEnable": "true",
-            "enableDownload": "true",
-            "enableAnnotation": "false",
-            "enableAnalytics": "false",
-            "webgl": "true",
-            "hard": "none",
-            "maxTextureSize": "1600",
-            "rangeChunkSize": "524288",
-            "zoomRatio": 1.5,
-            "stiffness": 3,
-            "pageMode": "0",
-            "singlePageMode": "0",
-            "pageSize": "0",
-            "autoPlay": "false",
-            "autoPlayDuration": 5000,
-            "autoPlayStart": "false",
-            "linkTarget": "2",
-            "sharePrefix": "dearflip-"
-        };
-    </script>
     <meta name="generator"
           content="Powered by Slider Revolution 6.6.12 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
     {{--    <link rel="icon" href="./wp-content/uploads/2022/09/cropped-logo-32x32.png" sizes="32x32"/>--}}
@@ -508,15 +354,18 @@
             background-image: url('{{asset('assets/client/wp-content/uploads/2020/09/bg-footer.jpg')}}');
         }
     </style>
-</head>
 
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
+</head>
 <body class="home page-template page-template-templates page-template-template-homepage-one page-template-templatestemplate-homepage-one-php page page-id-13">
 @php
     $config = \App\Models\Config::where('status', \App\Enums\ConfigStatus::ACTIVE)->first();
 @endphp
+
 <div id="page-wrapper" class="site">
     @include('clients.layouts.header')
     <div class="clearfix"></div>
+    @include('sweetalert::alert')
     <div id="content" class="site-content" role="main">
         @yield('content')
     </div>
@@ -705,7 +554,7 @@
                         lòng gọi điện để được tư vấn: <a href="tel:1900234538">1900234538</a>
                     </p>
                     <div class="back-homepage">
-                        <a href="https://quannho.vn/">
+                        <a href="{{route('home')}}">
                             <span>Trở về trang chủ</span>
                         </a>
                     </div>
@@ -794,16 +643,6 @@
     </style>
     <script type='text/javascript'
             src='{{asset('assets/client/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7')}}'></script>
-    <script type='text/javascript' id='contact-form-7-js-extra'>
-        /* <![CDATA[ */
-        var wpcf7 = {
-            "api": {
-                "root": "https:\/\/quannho.vn\/wp-json\/",
-                "namespace": "contact-form-7\/v1"
-            }
-        };
-        /* ]]> */
-    </script>
     <script type='text/javascript'
             src='{{asset('assets/client/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7')}}'
             id='contact-form-7-js'></script>
