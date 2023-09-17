@@ -28,13 +28,10 @@
                             <div class="col-md-6">
                                 <img src="{{$menu->thumbnail}}" alt="">
                             </div>
-                            <form method="post" action="{{route('order.create')}}">
-                                @csrf
+                            <form>
                                 <div class="col-md-6">
                                     <h2 class="title-single">{{ $menu->name }}</h2>
                                     <div class="">Danh mục: {{$menu->category->name}}</div>
-                                    <input type="text" value="{{$menu->id}}" name="menu_id" style="display: none">
-                                    <input type="text" style="display: none" value="{{$menu->price}}" name="price">
                                     <div class="diprice">
                                         <div class="pname">Giá bán:</div>
                                         <div class="pnews">{{$menu->price}}.000đ</div>
@@ -50,21 +47,9 @@
                                                class="form-control">
                                     </div>
 
-                                    @php
-                                        $isCookie = false;
-                                        if (isset($_COOKIE["information_id"])){
-                                            $isCookie = true;
-                                        }
-                                    @endphp
-                                    @if($isCookie == true)
-                                        <button class="btn btn-success" type="submit">Đặt
-                                            ngay
-                                        </button>
-                                    @else
-                                        <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Đặt
-                                            ngay
-                                        </a>
-                                    @endif
+                                    <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Đặt
+                                        ngay
+                                    </a>
                                 </div>
                             </form>
                         </div>
@@ -78,7 +63,6 @@
                             <div class="row list-related">
                                 @if(!$moreMenus->isEmpty())
                                     @foreach($moreMenus as $moreMenusItem)
-
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 colums-posts">
                                             <div class="box-posts">
                                                 <div class="img-posts">
@@ -95,14 +79,16 @@
                                                     </a>
                                                 </div>
                                                 <div class="info-posts">
-                                                    <a class="name-posts"  href="{{route('menu.detail', $moreMenusItem->id)}}">{{$moreMenusItem->name}}</a>
+                                                    <a class="name-posts"
+                                                       href="{{route('menu.detail', $moreMenusItem->id)}}">{{$moreMenusItem->name}}</a>
                                                     <div class="dsprice">
                                                         <div class="pname">Giá:</div>
                                                         <div class="pnews">{{$moreMenusItem->price}}.000đ</div>
                                                     </div>
                                                     <div class="dsview">
                                                         <div class="viewfood">
-                                                            <a href="{{route('menu.detail', $moreMenusItem->id)}}">XEM CHI TIẾT</a>
+                                                            <a href="{{route('menu.detail', $moreMenusItem->id)}}">XEM
+                                                                CHI TIẾT</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -123,7 +109,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thông tin ngừoi đặt Menu</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Thông tin người đặt đơn</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -132,7 +118,7 @@
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="fullName">Full Name</label>
+                            <label for="fullName">Họ và Tên</label>
                             <input type="text" class="form-control" name="fullName" id="fullName"
                                    placeholder="Nguyen Minh">
                         </div>
@@ -142,45 +128,34 @@
                                 <input type="email" class="form-control" name="email" id="inputEmail">
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword">Phone Number</label>
+                                <label for="inputPassword">Số điện thoại</label>
                                 <input type="text" class="form-control" name="phoneNumber" id="inputPassword">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputAddress">Address</label>
+                            <label for="inputAddress">Địa chỉ</label>
                             <input type="text" class="form-control" name="address" id="inputAddress"
                                    placeholder="1234 Main St">
                         </div>
+                        <input type="number" value="1" name="quantity" id="quantity-modal" style="display: none">
+                        <input type="text" value="{{$menu->id}}" name="menu_id" style="display: none">
+                        <input type="text" style="display: none" value="{{$menu->price}}" name="price">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu thông tin</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-    {{--    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel"--}}
-    {{--         aria-hidden="true">--}}
-    {{--        <div class="modal-dialog" role="document">--}}
-    {{--            <div class="modal-content">--}}
-    {{--                <div class="modal-header">--}}
-    {{--                    <h5 class="modal-title" id="modalOrderLabel">Menu</h5>--}}
-    {{--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
-    {{--                        <span aria-hidden="true">&times;</span>--}}
-    {{--                    </button>--}}
-    {{--                </div>--}}
-    {{--                <form>--}}
-    {{--                    <div class="modal-body">--}}
-    {{--                        ...--}}
-    {{--                    </div>--}}
-    {{--                    <div class="modal-footer">--}}
-    {{--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
-    {{--                        <button type="button" class="btn btn-primary">Order</button>--}}
-    {{--                    </div>--}}
-    {{--                </form>--}}
-    {{--            </div>--}}
-    {{--        </div>--}}
-    {{--    </div>--}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#quantity').on('change', function () {
+                let quantity = $(this).val();
+                $('#quantity-modal').val(quantity);
+            })
+        })
+    </script>
 @endsection
