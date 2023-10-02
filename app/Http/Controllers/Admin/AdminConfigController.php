@@ -36,6 +36,7 @@ class AdminConfigController extends Controller
             $config = [
                 'hotline' => $request->input('hotline'),
                 'logo' => $imageURL,
+                'email' => $request->input('email'),
                 'cskh' => $request->input('cskh'),
                 'facebook' => $request->input('facebook'),
                 'zalo' => $request->input('zalo'),
@@ -74,6 +75,7 @@ class AdminConfigController extends Controller
 
             $config->hotline = $request->input('hotline');
             $config->logo = $imageURL;
+            $config->email = $request->input('email');
             $config->cskh = $request->input('cskh');
             $config->facebook = $request->input('facebook');
             $config->zalo = $request->input('zalo');

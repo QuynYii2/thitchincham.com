@@ -15,6 +15,7 @@ class Config extends Model
         'cskh',
         'facebook',
         'zalo',
+        'email',
         'status',
     ];
 }

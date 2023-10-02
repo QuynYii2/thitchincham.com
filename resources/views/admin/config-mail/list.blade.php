@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Admin List Config')
+@section('title', 'Admin List Mail Config')
 
 @section('content')
     <div class="pagetitle">
@@ -8,57 +8,39 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                <li class="breadcrumb-item active">List Config</li>
+                <li class="breadcrumb-item active">List Mail Config</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
-        <div class="float-end mb-3 mt-2">
-            <a href="{{route('admin.config.create')}}" class="btn btn-primary float-right">Create Config</a>
-        </div>
         <div class="row">
-            <div class="mb-3">
-                <h5>Search Config</h5>
-                <input class="form-control" id="inputSearchConfig" type="text" placeholder="Search..">
-                <br>
-            </div>
             <table class="table table-bordered" id="tableConfig">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Logo</th>
-                    <th scope="col">Hotline</th>
-                    <th scope="col">CSKH</th>
-                    <th scope="col">Facebook</th>
-                    <th scope="col">Zalo</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Giá trị</th>
+                    <th scope="col">Loại</th>
                     <th scope="col">Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                @if(!$configs->isEmpty())
-                    @foreach($configs as $config)
+                @if(!$mailConfigs->isEmpty())
+                    @foreach($mailConfigs as $config)
                         <tr>
                             <th scope="row">{{$loop->index + 1}}</th>
                             <td>
-                                <img src="{{$config->logo}}" alt="" width="60px" height="60px">
+                                {{$config->name}}
                             </td>
                             <td>
-                                {{$config->hotline}}
-                            </td>
-                            <td>{{$config->cskh}}</td>
-                            <td>{{$config->facebook}}</td>
-                            <td>
-                                {{$config->zalo}}
+                                {{$config->value}}
                             </td>
                             <td>
-                                {{$config->email}}
+                                {{$config->type}}
                             </td>
-                            <td id="productStatus{{$config->id}}">{{$config->status}}</td>
                             <td>
-                                <a href="{{route('admin.show.detail.config', $config->id)}}"
+                                <a href="{{route('admin.show.detail.configs.mail', $config->id)}}"
                                    class="btn btn-secondary">Detail</a>
 
                                 <button class="btn btn-danger" type="button" data-bs-toggle="modal"
@@ -67,7 +49,7 @@
                                 <div class="modal fade" id="modalDelete{{$config->id}}" tabindex="-1"
                                      aria-labelledby="modalDelete{{$config->id}}" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <form action="{{route('admin.delete.config', $config->id)}}" method="post">
+                                        <form action="{{route('admin.delete.configs.mail', $config->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <div class="modal-content">
@@ -99,15 +81,4 @@
             </table>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#inputSearchConfig").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#tableConfig tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-    </script>
 @endsection
