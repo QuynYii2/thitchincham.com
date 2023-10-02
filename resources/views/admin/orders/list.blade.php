@@ -21,7 +21,7 @@
                 <br>
             </div>
             <div class="mt-3 mb-3">
-                <a href="{{route('admin.export.order')}}" class="btn btn-primary">Export</a>
+                <a href="{{route('admin.sync.orders')}}" class="btn btn-primary">Export</a>
             </div>
             <table class="table table-bordered" id="tableOrders">
                 <thead>

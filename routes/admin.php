@@ -60,6 +60,7 @@ Route::group(['prefix' => 'orders'], function () {
     Route::delete('delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.delete.order');
 
     Route::get('export-order', [ExportController::class, 'exportOrder'])->name('admin.export.order');
+    Route::get('sync-orders', [AdminOrderController::class, 'syncOrder'])->name('admin.sync.orders');
 });
 
 // Config

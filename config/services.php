@@ -31,4 +31,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google_sheets' => [
+        'client_id' => \App\Enums\Contains::GOOGLE_SHEETS_CLIENT_ID,
+        'client_secret' => \App\Enums\Contains::GOOGLE_SHEETS_CLIENT_SECRET,
+        'redirect' =>\App\Enums\Contains::GOOGLE_SHEETS_REDIRECT,
+        'scopes' => [
+            Google_Service_Sheets::SPREADSHEETS,
+        ],
+    ],
+
 ];

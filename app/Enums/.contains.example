@@ -1,0 +1,7 @@
+php artisan make:enum Contains
+you must copy (1), (2), (3) to Contains enum file
+(1) const GOOGLE_SHEETS_CLIENT_ID =  '';
+(2) const GOOGLE_SHEETS_CLIENT_SECRET =  '';
+(3) const GOOGLE_SHEETS_REDIRECT =  '';
+(4) const GOOGLE_SHEETS_ID =  '';
+(5) const PASSWORD_DEFAULT =  '123123';

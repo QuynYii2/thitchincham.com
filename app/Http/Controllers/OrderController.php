@@ -9,6 +9,9 @@ use App\Models\Information;
 use App\Models\Order;
 use App\Models\OrderItem;
 
+use Google_Client;
+use Google_Service_Sheets;
+use Google_Service_Sheets_ValueRange;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 
