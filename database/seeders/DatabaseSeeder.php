@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
 //            CategorySeeder::class,
 //            MenuSeeder::class,
 //            ConfigSeeder::class,
+//            MailConfigSeeder::class,
         ]);
     }
 }

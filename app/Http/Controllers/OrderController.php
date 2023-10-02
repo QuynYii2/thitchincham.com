@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Enums\OrderItemStatus;
 use App\Enums\OrderStatus;
+use App\Models\Config;
+use App\Models\Information;
 use App\Models\Order;
 use App\Models\OrderItem;
 
@@ -59,6 +61,11 @@ class OrderController extends Controller
                 $oldOrder->save();
                 $oldOrderItem->save();
             }
+
+            $configs = Config::all();
+
+            (new SendMailController())->sendEmail($configs[0]->email, 'thitchincham@gmail.com', 'Có đơn hàng mới được order', 'Có đơn hàng mới được order');
+
             Cookie::queue(Cookie::forget('information_id'));
             alert()->success('Thành công', 'Đặt đơn hàng thành công');
             return back();

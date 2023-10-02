@@ -4,6 +4,7 @@
 use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminConfigController;
 use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\AdminMailConfigController;
 use App\Http\Controllers\Admin\AdminMenuController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminOrderController;
@@ -69,4 +70,13 @@ Route::group(['prefix' => 'configs'], function  () {
     Route::get('create', [AdminConfigController::class, 'createProcess'])->name('admin.config.processCreate');
     Route::post('create', [AdminConfigController::class, 'create'])->name('admin.config.create');
     Route::delete('delete/{id}', [AdminConfigController::class, 'delete'])->name('admin.delete.config');
+});
+
+Route::group(['prefix' => 'configs-mail'], function  () {
+    Route::get('list', [AdminMailConfigController::class, 'index'])->name('admin.show.all.configs.mail');
+    Route::get('detail/{id}', [AdminMailConfigController::class, 'detail'])->name('admin.show.detail.configs.mail');
+    Route::put('update/{id}', [AdminMailConfigController::class, 'update'])->name('admin.update.configs.mail');
+    Route::get('create', [AdminMailConfigController::class, 'processCreate'])->name('admin.configs.mail.processCreate');
+    Route::post('create', [AdminMailConfigController::class, 'create'])->name('admin.configs.mail.create');
+    Route::delete('delete/{id}', [AdminMailConfigController::class, 'delete'])->name('admin.delete.configs.mail');
 });

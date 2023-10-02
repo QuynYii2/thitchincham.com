@@ -22,9 +22,13 @@
                         <label for="hotline">Hotline</label>
                         <input type="text" class="form-control" name="hotline" id="hotline" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-3">
                         <label for="cskh">CSKH</label>
-                        <input type="text" min="1" class="form-control" name="cskh" id="cskh" required>
+                        <input type="text" class="form-control" name="cskh" id="cskh" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
                     </div>
                 </div>
                 <div class="row">

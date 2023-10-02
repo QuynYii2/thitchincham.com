@@ -26,7 +26,12 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="cskh">CSKH</label>
-                        <input type="text" min="1" class="form-control" name="cskh" id="cskh" value="{{$config->cskh}}"
+                        <input type="text" class="form-control" name="cskh" id="cskh" value="{{$config->cskh}}"
+                               required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" value="{{$config->email}}"
                                required>
                     </div>
                 </div>

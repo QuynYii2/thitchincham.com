@@ -117,8 +117,15 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="{{route('admin.show.all.configs')}}">
-                <i class="bi bi-envelope"></i>
+                <i class="bi bi-activity"></i>
                 <span>Thiết lập</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{route('admin.show.all.configs.mail')}}">
+                <i class="bi bi-envelope"></i>
+                <span>Mail</span>
             </a>
         </li><!-- End Contact Page Nav -->
     </ul>
