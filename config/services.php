@@ -30,7 +30,6 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
     'google_sheets' => [
         'client_id' => \App\Enums\Contains::GOOGLE_SHEETS_CLIENT_ID,
         'client_secret' => \App\Enums\Contains::GOOGLE_SHEETS_CLIENT_SECRET,
@@ -38,6 +37,11 @@ return [
         'scopes' => [
             Google_Service_Sheets::SPREADSHEETS,
         ],
+    ],
+    'google' => [
+        'client_id' => env('GOOGLE_SHEETS_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_SHEETS_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_SHEETS_REDIRECT'),
     ],
 
 ];

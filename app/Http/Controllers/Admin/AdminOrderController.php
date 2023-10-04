@@ -74,9 +74,15 @@ class AdminOrderController extends Controller
             $client->setClientSecret(Contains::GOOGLE_SHEETS_CLIENT_SECRET);
             $client->setRedirectUri(Contains::GOOGLE_SHEETS_REDIRECT);
 
-            $client->addScope([
-                Google_Service_Sheets::SPREADSHEETS
-            ]);
+            $client->setScopes([Google_Service_Sheets::SPREADSHEETS]);
+
+            if (!$client->getAccessToken()) {
+                $authUrl = $client->createAuthUrl();
+                return redirect($authUrl);
+            }
+
+            $accessToken = $client->getAccessToken();
+
 
             $service = new Google_Service_Sheets($client);
 
@@ -105,7 +111,7 @@ class AdminOrderController extends Controller
             alert()->success('Thành công', 'Đồng bộ đơn hàng thành công');
             return back();
         } catch (\Exception $exception) {
-
+            dd($exception);
             alert()->error('Thất bại', 'Đã có lỗi xảy ra');
             return back();
         }
